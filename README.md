@@ -14,4 +14,6 @@ Article sources: content/page-articles/*.json and, for evidence sites, content/t
 
 Generated folders `public/library` and `public/workbooks` are intentionally ignored in Git and rebuilt on every deployment. Original core pages and shared browser assets are tracked. Sources and reports are outside the public output.
 
+Original core-guide articles live in `content/core-guides.json` and render only on their matching existing topic pages. The balloon-balance example uses a separately checked amortization calculation. After changing that illustration or its renderer, run `node scripts/test-balloon-illustration.mjs`, then build and run the full validator. Preserve the fictional-example and source-scope disclosures.
+
 Custom domains remain deferred. Set SITE_ORIGIN or change content/site.json when connecting the chosen host, and migrate canonical URLs on the existing base pages in the same commit. See DEPLOYMENT.md.
