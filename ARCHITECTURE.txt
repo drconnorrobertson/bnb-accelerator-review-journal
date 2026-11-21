@@ -12,11 +12,11 @@ Page budget per project:
 Resource index: 40 diligence playbooks + 20 process references + 1 library hub + 1,600 example workspaces = 1,667.
 Review journal: 40 evidence audit guides + 20 review methods + 1 library hub + 1,600 example workspaces = 1,667.
 Buyer tools: 40 calculation guides + 19 model interpretation references + 1 library hub + 1,600 worked calculations = 1,666.
-Total: 200 core pages and 4,800 variations = 5,000. 3 custom 404 pages excluded.
+Total: 200 core pages and 4,800 developed cases = 5,000. 3 custom 404 pages excluded.
 
 Search policy:
 Core pages: distinct question ownership, self canonicals, indexable, sitemap coverage.
-Example workspaces: real functional utility, explicit synthetic/example labels, self canonicals, noindex/follow, omitted from search sitemaps. Available through topic guides. No mass city pages, repeated keyword substitutions, fabricated reviews, fake property or client facts, unsupported local regulations, ranking promises or additional analytics.
+Developed cases: 4,800 standalone resources with unique questions, direct answers, concrete fictional teaching packets or worked calculations, interpretation, next steps, limitations and editable worksheets. All are self-canonical, index,follow and included in sitemaps. No fabricated customer reviews or verified outcome claims. Automated approval records content fingerprints; changes require renewed validation. Actual Google inclusion is not guaranteed.
 
 Functional requirements:
 Library search and topic filtering; scenario data visible before JavaScript; local editable calculations or audit/checklist interactions; print and export; clearly disclosed publisher; appropriate links between related resources; per-page metadata and breadcrumbs; no input submission.
@@ -25,4 +25,4 @@ Build architecture:
 Each repository owns its own content catalog, renderer, scripts, styles, tests and deploy settings. Generated routes built with Node at deployment. Keep sources outside public output. Deterministic generation, stable slugs, no fabricated historic dates. Existing base content preserved. Source catalog enumerates every core topic before generation.
 
 Validation gates:
-Exact page counts, unique titles/canonical paths, every route reachable, every internal link resolves, no duplicate main content, sitemap only indexable core pages, noindex all examples, JSON-LD parse, no source/config files in output, independent arithmetic tests for all 40 financial models and evidence relationships, input validation, browser live flows, mobile overflow checks, production deployment commit and route verification.
+Exact page counts, unique titles/canonical paths, every route reachable, every internal link resolves, no duplicate main content, sitemap covers every content page, no noindex cases, approved article fingerprints, automated evidence/arithmetic checks and within-topic similarity checks, JSON-LD parse, no source/config files in output, independent arithmetic tests for all 40 financial models and evidence relationships, input validation, browser live flows, mobile overflow checks, production deployment commit and route verification.

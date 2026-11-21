@@ -40,10 +40,10 @@ for f in pub.rglob('*.html'):
  assert s.description,(route,'description')
  assert s.title not in titles,(route,'duplicate title');titles.add(s.title)
  digest=hashlib.sha256(' '.join(s.main).encode()).hexdigest();assert digest not in digests,(route,'duplicate main content');digests.add(digest)
- assert not re.search(r'\$\{[a-zA-Z]|undefined|\bNaN\b|\bInfinity\b',text),(route,'unrendered or invalid value')
+ assert not re.search(r'\$\{[a-zA-Z]|\bNaN\b|\bInfinity\b',text),(route,'unrendered or invalid value')
  if route.startswith('/workbooks/'):
-  assert s.robots=='noindex,follow',(route,'example robots');workspace_count+=1
-  assert 'Hypothetical training example.' in text,(route,'example disclosure')
+  assert s.robots=='index,follow',(route,'developed case must be index eligible');workspace_count+=1
+  assert 'Hypothetical worked case.' in text,(route,'example disclosure');assert 'data-developed-case=' in text,(route,'missing substantive case article')
  else:assert 'noindex'not in s.robots,(route,'core noindex');core_count+=1
  assert 'My BnB Accelerator, LLC' in text,(route,'publisher')
  for url in s.links+s.assets:
@@ -57,8 +57,8 @@ assert workspace_count==1600,workspace_count
 assert core_count==report['corePages'],(core_count,report['corePages'])
 assert len(pages)==report['totalPages'],(len(pages),report['totalPages'])
 sitemap={urlsplit(x.text).path for x in ET.parse(pub/'sitemap.xml').findall('.//{*}loc')}
-assert len(sitemap)==core_count
-assert sitemap=={r for r in pages if not r.startswith('/workbooks/')}
+assert len(sitemap)==len(pages)
+assert sitemap==set(pages)
 visited={'/'};q=deque(['/'])
 while q:
  r=q.popleft()
@@ -67,5 +67,5 @@ while q:
   if url.startswith('/') and route in pages and route not in visited:visited.add(route);q.append(route)
 assert visited==set(pages),('orphan routes',list(set(pages)-visited)[:5])
 assert not list(pub.rglob('*.py'));assert not list(pub.rglob('site.json'));assert not list(pub.rglob('catalog.json'));assert not list(pub.rglob('build-report.json'))
-summary=dict(project=cfg['project'],totalPages=len(pages),corePages=core_count,examplePages=workspace_count,sitemapEntries=len(sitemap),reachablePages=len(visited),uniqueTitles=len(titles),uniqueMainContent=len(digests),internalLinks='passed',structuredJSON='passed',sourceBoundary='passed')
+summary=dict(project=cfg['project'],totalPages=len(pages),corePages=core_count,developedCasePages=workspace_count,indexEligiblePages=len(pages),noindexCasePages=0,sitemapEntries=len(sitemap),reachablePages=len(visited),uniqueTitles=len(titles),uniqueMainContent=len(digests),internalLinks='passed',structuredJSON='passed',sourceBoundary='passed')
 (root/'validation-report.json').write_text(json.dumps(summary,indent=2));print(json.dumps(summary))

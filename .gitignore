@@ -5,3 +5,5 @@ public/library/
 public/workbooks/
 build-report.json
 validation-report.json
+article-review-report.json
+article-review-ledger.json

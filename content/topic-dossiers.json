@@ -1,0 +1,682 @@
+{
+  "booking-totals": {
+    "subject": "Booking ledger A",
+    "field": "room-charge total",
+    "facts": [
+      "The summary lists $60,000 of room charges for a twelve-month period.",
+      "The supplied transaction lines total $54,000, with a separate $6,000 cleaning-charge subtotal.",
+      "The glossary does not say whether the headline includes cleaning receipts."
+    ],
+    "principle": "A room-charge claim needs a consistent transaction classification. The two displayed totals can be reconciled only after the receipt types are separated.",
+    "risk": "A mixed headline can distort every rate or return calculation using it.",
+    "deliverable": "a transaction bridge identifying which receipt categories belong in the claimed room-charge measure",
+    "recordLabels": [
+      "Annual room-charge summary",
+      "Receipt-classified transaction lines",
+      "Revenue glossary"
+    ]
+  },
+  "payout-reconciliation": {
+    "subject": "Payout bridge A",
+    "field": "gross-to-net difference",
+    "facts": [
+      "The reservation ledger lists $50,000 in room charges.",
+      "The payout statement totals $43,000 after deductions and timing adjustments.",
+      "The comparison note calls the $7,000 difference missing revenue without reviewing the adjustment lines."
+    ],
+    "principle": "A gross charge total and a net payout are different measures. A difference is a question for reconciliation, not proof that money is missing.",
+    "risk": "An unexplained gross-to-net gap can become an unsupported accusation or an incorrect performance summary.",
+    "deliverable": "a labeled bridge for fees, refunds, collected amounts and timing adjustments",
+    "recordLabels": [
+      "Reservation charge ledger",
+      "Net payout statement",
+      "Unreconciled gap commentary"
+    ]
+  },
+  "cleaning-pass-through": {
+    "subject": "Cleaning schedule A",
+    "field": "net cleaning contribution",
+    "facts": [
+      "Guest cleaning charges total $10,500 across 70 stays.",
+      "The cleaner cost illustration is $170 per stay, or $11,900 across those stays.",
+      "The operating summary adds cleaning receipts to income but omits the cleaner cost."
+    ],
+    "principle": "The receipt and its related cost need to be visible together. In this illustration, the listed cleaning amounts imply a $1,400 shortfall before other turnover costs.",
+    "risk": "Treating the receipt as pure profit overstates the contribution shown by the example.",
+    "deliverable": "a consistent cleaning receipt, turnover count and cost reconciliation",
+    "recordLabels": [
+      "Guest cleaning-charge schedule",
+      "Cleaner-cost illustration",
+      "Operating summary without cleaner cost"
+    ]
+  },
+  "refund-adjustments": {
+    "subject": "Refund ledger A",
+    "field": "completed versus reversed bookings",
+    "facts": [
+      "The booking export includes $52,000 of charges before refunds.",
+      "The refund schedule contains $4,000 of reversed charges.",
+      "The headline keeps $52,000 while the supporting note describes a post-refund measure."
+    ],
+    "principle": "A pre-refund charge total should not be labeled as the post-refund result. The status and reporting cutoff need to match.",
+    "risk": "Different cancellation and refund treatments can make source and summary figures appear to disagree.",
+    "deliverable": "a booking-status reconciliation with refunds and the intended reporting cutoff explicitly shown",
+    "recordLabels": [
+      "Pre-refund booking export",
+      "Refund transaction schedule",
+      "Post-refund headline description"
+    ]
+  },
+  "occupancy-denominator": {
+    "subject": "Occupancy comparison A",
+    "field": "available-night denominator",
+    "facts": [
+      "The calendar shows 200 booked nights, 20 owner-use nights and 15 closure nights within 365 calendar nights.",
+      "One report uses 365 as the denominator; another uses 330 offered nights.",
+      "The comparison calls the two occupancy figures contradictory without stating their definitions."
+    ],
+    "principle": "The same booked-night count can produce two valid measures under different availability definitions. The denominator must travel with the percentage.",
+    "risk": "An unexplained occupancy comparison can imply a demand difference that is actually a definition difference.",
+    "deliverable": "a calendar-night bridge and a label for the specific occupancy denominator",
+    "recordLabels": [
+      "Booked and unavailable-night calendar",
+      "Two-denominator occupancy report",
+      "Unexplained comparison commentary"
+    ]
+  },
+  "nightly-rate-average": {
+    "subject": "Rate average A",
+    "field": "weighting by booked nights",
+    "facts": [
+      "Period A has 20 booked nights at $300, producing $6,000 of room charges.",
+      "Period B has 80 booked nights at $200, producing $16,000 of room charges.",
+      "The summary averages the two rates to $250 instead of dividing $22,000 by 100 booked nights."
+    ],
+    "principle": "The weighted room rate in this illustration is $220. Averaging period rates equally gives a different measure because the night counts differ.",
+    "risk": "A simple average can overstate or understate the rate generated by the actual mix of booked nights.",
+    "deliverable": "the room-charge and booked-night weights used to calculate the stated average",
+    "recordLabels": [
+      "Higher-rate period schedule",
+      "Higher-volume period schedule",
+      "Unweighted-rate summary"
+    ]
+  },
+  "revpar-definition": {
+    "subject": "Available-night metric A",
+    "field": "revenue denominator",
+    "facts": [
+      "The room-charge schedule totals $50,000 with 200 booked nights.",
+      "The availability record lists 330 offered nights.",
+      "The dashboard labels $250 as revenue per available night even though it divides by booked nights."
+    ],
+    "principle": "Dividing by booked nights gives a room rate, while dividing by offered nights gives a different metric. The formula, label and period need to align.",
+    "risk": "A mislabeled rate can make an operating metric appear stronger than its stated definition supports.",
+    "deliverable": "a formula trace showing which nights divide the matching room-revenue amount",
+    "recordLabels": [
+      "Room-charge and booked-night schedule",
+      "Offered-night availability record",
+      "Mislabeled revenue-per-night dashboard"
+    ]
+  },
+  "partial-year-annualization": {
+    "subject": "Annualization example A",
+    "field": "observed versus extrapolated period",
+    "facts": [
+      "Three observed months produce $24,000 of room charges.",
+      "A presentation multiplies the $8,000 monthly average by twelve to show $96,000.",
+      "No observations for the other nine months are supplied in this example."
+    ],
+    "principle": "The $96,000 figure is an extrapolation under a constant-month assumption, not an observed annual result.",
+    "risk": "A mathematically correct multiplication can still be described too strongly when the unobserved period is hidden.",
+    "deliverable": "a clear separation of the recorded period, the extrapolation formula and unobserved months",
+    "recordLabels": [
+      "Three-month observed schedule",
+      "Twelve-month extrapolation",
+      "Unobserved-month manifest"
+    ]
+  },
+  "seasonal-mix": {
+    "subject": "Seasonal evidence A",
+    "field": "selected-period coverage",
+    "facts": [
+      "The strongest quarter contains $24,000 in room charges.",
+      "The remaining nine months contain $18,000 in total room charges.",
+      "The presentation discusses only the strongest quarter when describing the year's operation."
+    ],
+    "principle": "The selected quarter is part of a $42,000 annual illustration, not a substitute for the full-cycle view. Period selection matters to the conclusion.",
+    "risk": "A narrow sample can conceal weaker months and their funding implications.",
+    "deliverable": "a complete monthly schedule and an explanation of why any selected interval is being discussed",
+    "recordLabels": [
+      "Strongest-quarter schedule",
+      "Remaining-nine-month schedule",
+      "Selected-period presentation"
+    ]
+  },
+  "comparable-selection-bias": {
+    "subject": "Comparable register A",
+    "field": "selection rule",
+    "facts": [
+      "The candidate register contains twelve properties that initially meet the search filters.",
+      "The published set includes only the four highest room-revenue examples.",
+      "The exclusions column is blank for the eight omitted records."
+    ],
+    "principle": "A selected set is not automatically representative of the candidate set. A documented rule is needed to interpret what the chosen examples show.",
+    "risk": "The comparison can be driven by outcome-based selection rather than property similarity.",
+    "deliverable": "the candidate list, inclusion rule and property-specific exclusion explanations",
+    "recordLabels": [
+      "Full comparable candidate register",
+      "Top-result publication set",
+      "Blank exclusion register"
+    ]
+  },
+  "management-fee-base": {
+    "subject": "Management invoice A",
+    "field": "fee revenue base",
+    "facts": [
+      "The example agreement illustration applies 20% to $50,000 of defined room revenue.",
+      "The model instead applies 20% to $60,000 including another receipt category.",
+      "The summary quotes only the 20% rate and does not show the base."
+    ],
+    "principle": "The percentage is unchanged but the modeled dollar charge differs by $2,000 because its base differs. The base is part of the fee definition.",
+    "risk": "A fee comparison can look aligned while using materially different billing amounts.",
+    "deliverable": "a fee-base definition tied to the current scope and a reproducible sample calculation",
+    "recordLabels": [
+      "Defined fee-base illustration",
+      "Broader-base expense model",
+      "Percentage-only fee summary"
+    ]
+  },
+  "platform-charges": {
+    "subject": "Channel cost A",
+    "field": "channel-specific charge basis",
+    "facts": [
+      "Channel A contributes $35,000 of room revenue under a hypothetical 3% fee assumption.",
+      "Channel B contributes $15,000 under a hypothetical 10% fee assumption.",
+      "The summary applies 3% to the combined $50,000 without explaining the mixed channel assumptions."
+    ],
+    "principle": "The supplied assumptions imply $2,550, not $1,500, in combined modeled charges. These are example rates rather than current platform terms.",
+    "risk": "A blended channel portfolio can be understated by applying the smallest assumed rate to every receipt.",
+    "deliverable": "a channel-by-channel fee bridge using the actual applicable definitions and clearly labeled assumptions",
+    "recordLabels": [
+      "Channel A assumption",
+      "Channel B assumption",
+      "Single-rate combined summary"
+    ]
+  },
+  "utility-schedule": {
+    "subject": "Utility cost A",
+    "field": "monthly coverage",
+    "facts": [
+      "The supplied bills show $300 in one low-use month and $700 in another month.",
+      "The model multiplies only the $300 bill by twelve.",
+      "Ten months are unprovided, and the occupancy pattern of the prior owner is unspecified."
+    ],
+    "principle": "A single observed month supports that month's bill. Multiplying it into an annual amount introduces an assumption about unobserved use and periods.",
+    "risk": "A precise annual total can look recorded even when most months were never examined.",
+    "deliverable": "a month-by-month bill schedule with missing periods and estimates explicitly labeled",
+    "recordLabels": [
+      "Two observed utility bills",
+      "One-month annualization",
+      "Missing-month and use-context manifest"
+    ]
+  },
+  "insurance-estimate": {
+    "subject": "Insurance cost evidence A",
+    "field": "quoted use and date",
+    "facts": [
+      "The expense model uses a historic $2,400 premium from an earlier ownership period.",
+      "A current inquiry about the proposed rental use remains open.",
+      "The summary describes the historic amount as the buyer's confirmed annual cost."
+    ],
+    "principle": "An old premium is a source observation, not confirmation of a current policy for a different use or owner.",
+    "risk": "A cost estimate can be mistaken for coverage confirmation when its scope and date are omitted.",
+    "deliverable": "a current insurer response and an expense assumption labeled to match what has actually been quoted",
+    "recordLabels": [
+      "Historic premium expense model",
+      "Unanswered current-use inquiry",
+      "Future-cost confirmation claim"
+    ]
+  },
+  "property-tax-estimate": {
+    "subject": "Property-tax assumption A",
+    "field": "source basis",
+    "facts": [
+      "The operating model uses a seller's historic $5,000 payment.",
+      "The evidence packet does not explain the period, basis or whether the proposed purchase changes the relevant assumptions.",
+      "The summary describes the amount as a settled future buyer expense."
+    ],
+    "principle": "A historic payment and a prospective tax assumption are different statements. The example requires appropriate property-specific review rather than a universal rule.",
+    "risk": "An expense can appear certain when its current basis has not been examined.",
+    "deliverable": "the relevant authority record and qualified review of the assumption used for the proposed transaction",
+    "recordLabels": [
+      "Historic seller-payment record",
+      "Unexamined basis and period manifest",
+      "Future-buyer expense summary"
+    ]
+  },
+  "repair-allowance": {
+    "subject": "Repair comparison A",
+    "field": "scope covered by the amount",
+    "facts": [
+      "The model includes a $3,000 repair allowance.",
+      "A scoped contractor illustration totals $5,500 and excludes additional investigation.",
+      "The summary treats the allowance as if it were the contractor's complete fixed price."
+    ],
+    "principle": "An internal allowance and a provider's scoped estimate are different records. The amount and exclusions need a bridge before the two are treated as equivalent.",
+    "risk": "An allowance can hide both a known difference and still-unpriced work.",
+    "deliverable": "a scope-and-amount reconciliation preserving the contractor's exclusions and the owner's separate allowance",
+    "recordLabels": [
+      "Internal repair allowance",
+      "Broader contractor-scope illustration",
+      "Fixed-price claim in summary"
+    ]
+  },
+  "reserve-treatment": {
+    "subject": "Reserve movement A",
+    "field": "allocation versus expenditure",
+    "facts": [
+      "The owner earmarks $10,000 as reserve cash.",
+      "Later, $3,000 is paid for work from that cash pool.",
+      "The summary subtracts both the full allocation and the $3,000 payment as if they were independent operating expenses."
+    ],
+    "principle": "A cash earmark and a subsequent transaction are separate events. The model should show how it treats each without silently counting the same amount twice.",
+    "risk": "Reserve presentation can distort a cash-flow comparison if allocations and uses are mixed.",
+    "deliverable": "a movement schedule distinguishing earmarking, transfers and actual paid or recognized work",
+    "recordLabels": [
+      "Reserve earmark record",
+      "Later work-payment record",
+      "Double-subtraction summary"
+    ]
+  },
+  "capital-work": {
+    "subject": "Capital-work schedule A",
+    "field": "irregular work omitted from cash view",
+    "facts": [
+      "The recurring expense summary totals $25,000.",
+      "A separate work schedule identifies a $12,000 irregular project expected during the example period.",
+      "The headline cash-flow claim does not mention that separate cash requirement."
+    ],
+    "principle": "A recurring-cost measure can be useful, but it does not automatically include irregular work. A cash conclusion should state which obligations remain outside it.",
+    "risk": "An operating result can be mistaken for all cash available to the owner.",
+    "deliverable": "a separate timing and funding schedule for irregular work, with appropriate professional treatment of accounting questions",
+    "recordLabels": [
+      "Recurring expense schedule",
+      "Irregular work schedule",
+      "Cash-flow headline without irregular work"
+    ]
+  },
+  "total-cash-invested": {
+    "subject": "Entry-cost evidence A",
+    "field": "cash components",
+    "facts": [
+      "The acquisition example has $100,000 down payment, $12,000 closing cash, $30,000 setup, $5,000 fees and $15,000 reserves.",
+      "The return summary uses only the $100,000 down payment as its denominator.",
+      "The text calls that denominator total cash invested."
+    ],
+    "principle": "The listed cash commitments add to $162,000 under the stated definition. A down-payment-only measure needs a different label from an all-cash measure.",
+    "risk": "The same cash-flow numerator can produce a materially different percentage when the denominator changes.",
+    "deliverable": "a component schedule that reconciles the return denominator and identifies any financed, credited or excluded items",
+    "recordLabels": [
+      "Entry-cash component schedule",
+      "Down-payment-only return denominator",
+      "Total-cash denominator label"
+    ]
+  },
+  "deposit-credits": {
+    "subject": "Deposit reconciliation A",
+    "field": "single credit application",
+    "facts": [
+      "The closing illustration requires $112,000 before the deposit credit.",
+      "The deposit record shows $10,000 paid earlier.",
+      "The summary includes the deposit as a separate cost and also requests the full uncredited $112,000."
+    ],
+    "principle": "The deposit needs one trace through the cash bridge. Its treatment cannot be inferred solely from its appearance on two separate records.",
+    "risk": "An already-paid amount can be counted again or missed entirely when the cash bridge is absent.",
+    "deliverable": "the settlement professional's reconciliation of paid deposit, credit applied and additional funds due",
+    "recordLabels": [
+      "Pre-credit closing requirement",
+      "Earlier deposit record",
+      "Combined-cost and funding summary"
+    ]
+  },
+  "purchase-credits": {
+    "subject": "Purchase credit A",
+    "field": "price versus cash treatment",
+    "facts": [
+      "The fictional contract price is $400,000 and a credit illustration is $5,000.",
+      "The cash bridge applies the credit once to the relevant closing requirement.",
+      "A performance summary subtracts it again from a price measure without explaining the different basis."
+    ],
+    "principle": "Price, credits and funds due are different fields. Each use of a credit needs an explicit definition so it is not silently applied twice.",
+    "risk": "An unexplained credit can make cash and yield comparisons inconsistent.",
+    "deliverable": "a transaction-specific bridge showing where the credit applies and which measures remain unchanged",
+    "recordLabels": [
+      "Fictional price and credit schedule",
+      "Closing cash bridge",
+      "Second credit adjustment in performance summary"
+    ]
+  },
+  "fee-timing": {
+    "subject": "Service fee schedule A",
+    "field": "timing of committed cash",
+    "facts": [
+      "An example service fee of $5,000 is paid before closing.",
+      "The entry-cost summary includes only amounts paid on closing day.",
+      "The text describes that summary as all cash committed to acquisition and launch."
+    ],
+    "principle": "Payment date alone does not determine whether an amount belongs in a defined committed-cash measure. The measure needs a stated time and scope boundary.",
+    "risk": "Upfront amounts can disappear from a denominator simply because they were paid earlier.",
+    "deliverable": "a fee schedule with recipient, milestone, payment date and inclusion in the chosen cash definition",
+    "recordLabels": [
+      "Pre-closing service-fee example",
+      "Closing-day-only cost summary",
+      "All-committed-cash description"
+    ]
+  },
+  "loan-payment": {
+    "subject": "Loan structure A",
+    "field": "payment type",
+    "facts": [
+      "The model uses $300,000 principal, a 7% annual rate and thirty-year amortization.",
+      "A comparison term illustration describes an initial interest-only period at the same principal and rate.",
+      "The summary treats their first monthly payments as the same loan structure."
+    ],
+    "principle": "A principal-and-interest payment and an interest-only payment reflect different repayment structures even when principal and rate match.",
+    "risk": "A lower initial payment may be extrapolated beyond the period it actually describes.",
+    "deliverable": "a lender-confirmed payment schedule that identifies principal, interest, repayment structure and later changes",
+    "recordLabels": [
+      "Amortizing loan model",
+      "Initial interest-only term illustration",
+      "Equivalent-structure comparison claim"
+    ]
+  },
+  "interest-only-period": {
+    "subject": "Payment-period evidence A",
+    "field": "initial versus later period",
+    "facts": [
+      "The loan illustration has twelve initial interest-only months.",
+      "The later period is described as amortizing under separate terms.",
+      "The operating summary uses the initial payment amount for every year in its holding scenario."
+    ],
+    "principle": "One period's payment does not establish every later period's obligation. The change point and later assumptions need to remain visible.",
+    "risk": "An initial payment can make long-run financing costs appear more certain or lower than the stated structure supports.",
+    "deliverable": "a period-by-period lender schedule and an explicit label for any later payment still being assumed",
+    "recordLabels": [
+      "Initial-payment period illustration",
+      "Later amortization description",
+      "Holding-period payment summary"
+    ]
+  },
+  "balloon-balance": {
+    "subject": "Maturity example A",
+    "field": "remaining principal obligation",
+    "facts": [
+      "The term illustration uses a thirty-year amortization basis but an earlier maturity date.",
+      "A level-payment schedule therefore does not by itself show the full obligation at maturity.",
+      "The narrative assumes refinancing will remove the remaining balance without evidence of future financing availability."
+    ],
+    "principle": "Amortization and maturity describe different features. A future refinance is an assumption rather than an established source of funds.",
+    "risk": "A cash-flow narrative can omit a material remaining principal obligation.",
+    "deliverable": "the actual maturity terms, remaining-balance illustration and a separately labeled refinancing assumption",
+    "recordLabels": [
+      "Amortization and maturity terms",
+      "Level-payment schedule",
+      "Unverified refinancing narrative"
+    ]
+  },
+  "debt-service-ratio": {
+    "subject": "Coverage ratio A",
+    "field": "matching annual units",
+    "facts": [
+      "The operating-income illustration is $30,000 per year.",
+      "The loan-payment line is $2,000 per month.",
+      "The summary divides $30,000 by $2,000 and reports a ratio of fifteen without aligning periods."
+    ],
+    "principle": "Annualizing the stated monthly debt gives $24,000 and a ratio of 1.25 under these definitions. Unit alignment is necessary before the ratio is interpreted.",
+    "risk": "A period mismatch can radically change a headline coverage figure.",
+    "deliverable": "a formula trace with matching income and debt periods and the lender's relevant income definition",
+    "recordLabels": [
+      "Annual operating-income illustration",
+      "Monthly loan-payment line",
+      "Unaligned coverage-ratio summary"
+    ]
+  },
+  "return-denominator": {
+    "subject": "Return basis A",
+    "field": "defined cash base",
+    "facts": [
+      "The same $10,000 annual cash-flow illustration is compared with $100,000 down payment and $162,000 total listed cash.",
+      "One presentation displays 10% and another about 6.17%.",
+      "The summary calls the different percentages a performance change without discussing their denominators."
+    ],
+    "principle": "The numerator did not change in this example; the cash base did. Both percentages must carry their denominator definitions.",
+    "risk": "A definition change can be mistaken for a change in operating outcome.",
+    "deliverable": "the original numerator, both cash component schedules and a consistent label for each return measure",
+    "recordLabels": [
+      "Two cash-base comparison",
+      "Two return-percentage presentation",
+      "Unexplained performance-change claim"
+    ]
+  },
+  "cash-flow-definition": {
+    "subject": "Operating bridge A",
+    "field": "costs below the headline",
+    "facts": [
+      "The room-revenue illustration is $50,000 and operating costs are $25,000.",
+      "Annual debt payments are $24,000.",
+      "The headline calls the $25,000 operating surplus owner cash without subtracting the debt line."
+    ],
+    "principle": "Operating income and debt-adjusted cash flow are different measures. The stated figures leave $1,000 after the entered debt payments before other exclusions.",
+    "risk": "A useful operating metric can be overstated when described as all cash available to the owner.",
+    "deliverable": "a bridge from room revenue to operating income and then debt-adjusted cash, with additional exclusions stated",
+    "recordLabels": [
+      "Room-revenue and operating-cost schedule",
+      "Annual debt-payment schedule",
+      "Owner-cash headline"
+    ]
+  },
+  "projected-versus-actual": {
+    "subject": "Mixed-status case A",
+    "field": "observed and assumed fields",
+    "facts": [
+      "The example purchase price is a recorded transaction field in the scenario.",
+      "The room-revenue amount is a forward-looking assumption rather than an observed operating result.",
+      "The presentation combines the two without labeling their different evidence status."
+    ],
+    "principle": "An observed purchase input does not convert an assumed operating input into actual performance. The combined output remains a scenario.",
+    "risk": "Readers may infer that an entire result was observed when only one component was recorded.",
+    "deliverable": "a status label for every material field and separate treatment of recorded, quoted and assumed inputs",
+    "recordLabels": [
+      "Recorded-field example",
+      "Forward-looking room-revenue assumption",
+      "Mixed-status presentation"
+    ]
+  },
+  "reporting-period": {
+    "subject": "Period alignment A",
+    "field": "start and end dates",
+    "facts": [
+      "The revenue report covers twelve months.",
+      "The expense export covers nine months and lacks a bridge for the remaining three.",
+      "The summary subtracts the nine-month expenses from the full-year revenue and labels the difference an annual result."
+    ],
+    "principle": "The subtraction is possible mathematically but does not establish a like-for-like annual measure. The uncovered period must stay visible.",
+    "risk": "An unaligned interval can overstate the apparent surplus without any arithmetic error.",
+    "deliverable": "matching-period records or an explicit bridge labeling the unobserved interval and any estimate",
+    "recordLabels": [
+      "Full-year revenue report",
+      "Nine-month expense export",
+      "Annual-result summary"
+    ]
+  },
+  "client-stage-context": {
+    "subject": "Service-stage example A",
+    "field": "stage actually observed",
+    "facts": [
+      "The retained account describes an introductory conversation and the questions discussed.",
+      "The later summary uses it as support for a completed acquisition and a year of operations.",
+      "No later-stage account or operating record is supplied in the example."
+    ],
+    "principle": "A source about one stage supports only the experience it actually addresses. Later results cannot be supplied by inference.",
+    "risk": "A narrow account can become an unsupported broad endorsement when its stage is omitted.",
+    "deliverable": "a stage-specific source reference and a summary limited to the observations actually provided",
+    "recordLabels": [
+      "Introductory-stage source account",
+      "Later-stage outcome summary",
+      "Later-source manifest"
+    ]
+  },
+  "review-chronology": {
+    "subject": "Review timeline A",
+    "field": "original post and update",
+    "facts": [
+      "The source metadata shows one original post and a later update by the same account.",
+      "The collection summary counts the update as a separate customer account.",
+      "The response sequence is omitted from the timeline."
+    ],
+    "principle": "An update can change the context of one account without becoming another independent experience. Preserve the sequence and source identity.",
+    "risk": "A timeline error can affect both the count and the interpretation of visible feedback.",
+    "deliverable": "the original post, update history and response dates treated as one traceable source sequence",
+    "recordLabels": [
+      "Original-post and update metadata",
+      "Separate-account count summary",
+      "Response-timeline omission"
+    ]
+  },
+  "review-specificity": {
+    "subject": "Feedback scope A",
+    "field": "explicit statement versus inference",
+    "facts": [
+      "The source description concerns response speed during coordination.",
+      "The summary attributes a financial return claim that the source did not make.",
+      "No quoted or linked operating records support that added statement in the example."
+    ],
+    "principle": "A summary must distinguish an explicit observation from the publisher's inference. Service communication and financial performance are different claim types.",
+    "risk": "Added specificity can make feedback appear to establish an outcome it never discussed.",
+    "deliverable": "a narrow paraphrase tied to the original source and separate evidence for any financial claim",
+    "recordLabels": [
+      "Coordination-response source description",
+      "Added financial-return summary",
+      "Financial-support manifest"
+    ]
+  },
+  "review-incentives": {
+    "subject": "Solicitation record A",
+    "field": "what relationship is disclosed",
+    "facts": [
+      "The visible solicitation note asks for feedback but does not state an incentive in the supplied example.",
+      "A later summary asserts that a reward was provided without a supporting record.",
+      "The source register leaves the relationship field unresolved."
+    ],
+    "principle": "The absence of a supplied relationship record does not establish either that an incentive existed or that it did not. Record what is disclosed and what remains unknown.",
+    "risk": "An unresolved relationship can become an unsupported factual allegation if the summary fills the gap.",
+    "deliverable": "the actual disclosure or solicitation terms and a conclusion limited to the available evidence",
+    "recordLabels": [
+      "Visible solicitation note",
+      "Unsupported incentive assertion",
+      "Unresolved relationship register"
+    ]
+  },
+  "company-ownership": {
+    "subject": "Publisher disclosure A",
+    "field": "publisher relationship",
+    "facts": [
+      "The hypothetical publication is owned by the company it discusses.",
+      "Its about page identifies that relationship.",
+      "A search-result description calls the publication independent without carrying the ownership context."
+    ],
+    "principle": "Publisher identity is relevant to how a reader interprets evaluative material. A company perspective should not be presented as an independent assessment.",
+    "risk": "A missing relationship label can change the apparent authority of an otherwise clearly attributed resource.",
+    "deliverable": "a visible publisher statement and consistent ownership context in the page and its metadata",
+    "recordLabels": [
+      "Fictional publisher ownership record",
+      "Relationship disclosure",
+      "Independent-publication description"
+    ]
+  },
+  "complaint-resolution": {
+    "subject": "Resolution timeline A",
+    "field": "response versus completion",
+    "facts": [
+      "The source sequence contains a concern and a response inviting further contact.",
+      "No documented completion step is supplied in the example.",
+      "The summary describes the concern as resolved based only on the invitation to contact support."
+    ],
+    "principle": "A response, proposed action and documented completion are separate events. An invitation alone does not establish the final outcome.",
+    "risk": "The summary can overstate resolution or imply fault if it treats an incomplete sequence as conclusive.",
+    "deliverable": "the available follow-up sequence and a status that distinguishes proposed action from documented completion",
+    "recordLabels": [
+      "Concern and invitation sequence",
+      "Completion-evidence manifest",
+      "Resolution summary"
+    ]
+  },
+  "scope-exclusion": {
+    "subject": "Service scope A",
+    "field": "included task",
+    "facts": [
+      "The example proposal lists sourcing and transaction coordination.",
+      "A separate requested task is identified as outside that scope.",
+      "The service summary assumes that the excluded task was included without a documented change."
+    ],
+    "principle": "Expectations and retained scope need to be compared directly. A general service label does not supply an omitted deliverable.",
+    "risk": "An evidence review can misattribute an event when it ignores the actual scope boundary.",
+    "deliverable": "the relevant scope, exclusions and any documented change, with professional review where interpretation is needed",
+    "recordLabels": [
+      "Included-task proposal",
+      "Out-of-scope request",
+      "Undocumented inclusion summary"
+    ]
+  },
+  "responsibility-boundary": {
+    "subject": "Responsibility matrix A",
+    "field": "provider for the event",
+    "facts": [
+      "The acquisition scope ends at its stated handoff.",
+      "The ongoing operating task is assigned to a separate provider under another scope.",
+      "The summary treats both providers as one continuing obligation."
+    ],
+    "principle": "The specific event should be mapped to the actual role and relevant record. A shared project context does not merge separate scopes.",
+    "risk": "A broad brand-level conclusion can exceed what the source shows about the responsible task.",
+    "deliverable": "a task-to-provider map and the records governing the particular stage or event",
+    "recordLabels": [
+      "Acquisition handoff scope",
+      "Separate operating-provider scope",
+      "Merged-obligation summary"
+    ]
+  },
+  "marketing-timestamp": {
+    "subject": "Offer chronology A",
+    "field": "version applicable to the event",
+    "facts": [
+      "A dated proposal belongs to an earlier engagement period.",
+      "The current marketing page describes a later offer with different deliverables.",
+      "The comparison assumes the current page explains the earlier engagement without establishing that connection."
+    ],
+    "principle": "A current description and a past agreement can address different versions. The relevant period and scope must remain attached to each.",
+    "risk": "A timing mismatch can produce an unfair comparison even when both sources are accurately copied.",
+    "deliverable": "the dated source versions and a comparison limited to the actual period and engagement being discussed",
+    "recordLabels": [
+      "Earlier-engagement proposal",
+      "Current offer description",
+      "Unaligned version comparison"
+    ]
+  },
+  "source-traceability": {
+    "subject": "Source citation A",
+    "field": "precise originating record",
+    "facts": [
+      "The summary cites a company homepage rather than the document supporting its specific claim.",
+      "The source register has no document title, observation date or relevant section reference.",
+      "A copied figure is therefore not reproducible from the supplied citation alone."
+    ],
+    "principle": "A link to a publisher is different from a link to the evidence for a particular statement. Traceability needs the actual record and context.",
+    "risk": "Readers cannot repeat the comparison if the source reference stops at a broad landing page.",
+    "deliverable": "a precise, authorized source reference with date, scope and the location of the relevant material",
+    "recordLabels": [
+      "Broad homepage citation",
+      "Incomplete source register",
+      "Unreproducible copied figure"
+    ]
+  }
+}
