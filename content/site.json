@@ -1,0 +1,19 @@
+{
+  "project": "bnb-accelerator-review-journal",
+  "name": "BNB Review Journal",
+  "short": "Review Journal",
+  "kind": "audit",
+  "library": "Evidence review library",
+  "accent": "#ffbd8c",
+  "intro": "Read claims in context and distinguish source records from summaries and assumptions. Each guide has a defined evidence question and forty synthetic practice packets. This journal is company-published, not an independent rating service.",
+  "search": "Try payout, review or denominator",
+  "origin": "https://bnb-accelerator-review-journal.vercel.app",
+  "baseRoutes": [
+    "/",
+    "/about/",
+    "/case-study-evidence/",
+    "/projection-audit/",
+    "/proposal-questions/",
+    "/reading-reviews/"
+  ]
+}

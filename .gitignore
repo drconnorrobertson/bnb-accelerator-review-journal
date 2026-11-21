@@ -1,3 +1,7 @@
 .vercel
 node_modules
 .DS_Store
+public/library/
+public/workbooks/
+build-report.json
+validation-report.json

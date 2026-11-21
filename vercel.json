@@ -16,5 +16,7 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "node scripts/build.mjs",
+  "installCommand": ""
 }

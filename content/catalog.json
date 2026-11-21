@@ -1,0 +1,1076 @@
+{
+  "topics": [
+    {
+      "title": "Booking totals",
+      "category": "Revenue evidence",
+      "question": "Do room charges reconcile to the claimed booking total?",
+      "documents": [
+        "Reservation-level export",
+        "refund log",
+        "room-charge definition"
+      ],
+      "flags": [
+        "A dashboard headline includes amounts absent from the ledger."
+      ],
+      "action": "Reconcile individual room charges before discussing return.",
+      "limit": "A numerical match does not verify the transactions.",
+      "slug": "booking-totals",
+      "checks": [
+        "Request reservation-level export.",
+        "Request refund log.",
+        "Request room-charge definition.",
+        "Reconcile individual room charges before discussing return."
+      ]
+    },
+    {
+      "title": "Payout reconciliation",
+      "category": "Revenue evidence",
+      "question": "Can gross bookings be bridged to cash paid out?",
+      "documents": [
+        "Payout statement",
+        "deductions",
+        "timing adjustments"
+      ],
+      "flags": [
+        "Gross revenue is compared directly with a net bank receipt."
+      ],
+      "action": "Create a bridge for fees, refunds, taxes and timing.",
+      "limit": "Cash receipt and earned revenue are different measures.",
+      "slug": "payout-reconciliation",
+      "checks": [
+        "Request payout statement.",
+        "Request deductions.",
+        "Request timing adjustments.",
+        "Create a bridge for fees, refunds, taxes and timing."
+      ]
+    },
+    {
+      "title": "Cleaning pass-through",
+      "category": "Revenue evidence",
+      "question": "Are cleaning receipts and cleaning costs both visible?",
+      "documents": [
+        "Guest cleaning charges",
+        "cleaner invoices",
+        "turnover count"
+      ],
+      "flags": [
+        "Cleaning income is included while the related expense is omitted."
+      ],
+      "action": "Show room revenue and cleaning economics separately.",
+      "limit": "A cleaning fee is not automatically profit.",
+      "slug": "cleaning-pass-through",
+      "checks": [
+        "Request guest cleaning charges.",
+        "Request cleaner invoices.",
+        "Request turnover count.",
+        "Show room revenue and cleaning economics separately."
+      ]
+    },
+    {
+      "title": "Refund adjustments",
+      "category": "Revenue evidence",
+      "question": "Were cancellations and refunds incorporated consistently?",
+      "documents": [
+        "Refund transactions",
+        "booking status",
+        "reporting cutoff"
+      ],
+      "flags": [
+        "Cancelled bookings remain in an earned-revenue total."
+      ],
+      "action": "Reconcile booked, completed, refunded and paid transactions.",
+      "limit": "Cancellation terms and accounting treatment require their own review.",
+      "slug": "refund-adjustments",
+      "checks": [
+        "Request refund transactions.",
+        "Request booking status.",
+        "Request reporting cutoff.",
+        "Reconcile booked, completed, refunded and paid transactions."
+      ]
+    },
+    {
+      "title": "Occupancy denominator",
+      "category": "Revenue evidence",
+      "question": "Does the occupancy denominator use the stated availability?",
+      "documents": [
+        "Bookable calendar",
+        "owner stays",
+        "maintenance closures"
+      ],
+      "flags": [
+        "Booked nights are divided by fewer nights without explanation."
+      ],
+      "action": "Show total, available, blocked and booked nights separately.",
+      "limit": "High occupancy on limited availability need not mean high annual revenue.",
+      "slug": "occupancy-denominator",
+      "checks": [
+        "Request bookable calendar.",
+        "Request owner stays.",
+        "Request maintenance closures.",
+        "Show total, available, blocked and booked nights separately."
+      ]
+    },
+    {
+      "title": "Nightly rate average",
+      "category": "Revenue evidence",
+      "question": "Is average nightly rate weighted by booked nights?",
+      "documents": [
+        "Nightly room charges",
+        "booked nights",
+        "excluded fees"
+      ],
+      "flags": [
+        "A simple average of monthly rates differs from the annual weighted rate."
+      ],
+      "action": "Divide consistent room revenue by the booked nights it generated.",
+      "limit": "A weighted average still hides the distribution of rates.",
+      "slug": "nightly-rate-average",
+      "checks": [
+        "Request nightly room charges.",
+        "Request booked nights.",
+        "Request excluded fees.",
+        "Divide consistent room revenue by the booked nights it generated."
+      ]
+    },
+    {
+      "title": "RevPAR definition",
+      "category": "Revenue evidence",
+      "question": "Does revenue per available night use matching inputs?",
+      "documents": [
+        "Room revenue",
+        "available nights",
+        "period label"
+      ],
+      "flags": [
+        "A per-booked-night figure is labeled as per-available-night revenue."
+      ],
+      "action": "Use matching revenue and availability for the same period.",
+      "limit": "RevPAR excludes costs and does not measure profit.",
+      "slug": "revpar-definition",
+      "checks": [
+        "Request room revenue.",
+        "Request available nights.",
+        "Request period label.",
+        "Use matching revenue and availability for the same period."
+      ]
+    },
+    {
+      "title": "Partial-year annualization",
+      "category": "Revenue evidence",
+      "question": "What does multiplying a partial period assume?",
+      "documents": [
+        "Monthly results",
+        "open dates",
+        "seasonal context"
+      ],
+      "flags": [
+        "A short high-demand period is multiplied into a full-year claim."
+      ],
+      "action": "Label the arithmetic and show the months not observed.",
+      "limit": "Annualization is an assumption rather than recorded annual performance.",
+      "slug": "partial-year-annualization",
+      "checks": [
+        "Request monthly results.",
+        "Request open dates.",
+        "Request seasonal context.",
+        "Label the arithmetic and show the months not observed."
+      ]
+    },
+    {
+      "title": "Seasonal mix",
+      "category": "Revenue evidence",
+      "question": "Are strong months masking weak periods?",
+      "documents": [
+        "Monthly room revenue",
+        "expenses",
+        "available nights"
+      ],
+      "flags": [
+        "Only the best quarter is visible in the summary."
+      ],
+      "action": "Compare full-cycle totals with the selected-period presentation.",
+      "limit": "Past monthly patterns do not establish future demand.",
+      "slug": "seasonal-mix",
+      "checks": [
+        "Request monthly room revenue.",
+        "Request expenses.",
+        "Request available nights.",
+        "Compare full-cycle totals with the selected-period presentation."
+      ]
+    },
+    {
+      "title": "Comparable selection bias",
+      "category": "Revenue evidence",
+      "question": "Were inclusion rules defined before selecting examples?",
+      "documents": [
+        "Full candidate set",
+        "property attributes",
+        "exclusion reasons"
+      ],
+      "flags": [
+        "Only unusually strong properties remain in the comparison set."
+      ],
+      "action": "Document how each comparable was included or excluded.",
+      "limit": "Comparable data is not a property-specific forecast.",
+      "slug": "comparable-selection-bias",
+      "checks": [
+        "Request full candidate set.",
+        "Request property attributes.",
+        "Request exclusion reasons.",
+        "Document how each comparable was included or excluded."
+      ]
+    },
+    {
+      "title": "Management fee base",
+      "category": "Expense evidence",
+      "question": "What amount is the management percentage applied to?",
+      "documents": [
+        "Agreement",
+        "fee-base definition",
+        "sample invoice"
+      ],
+      "flags": [
+        "The same percentage produces different dollar fees because the base differs."
+      ],
+      "action": "Apply the agreed definition to a transparent revenue base.",
+      "limit": "Only the current contract establishes the actual billing basis.",
+      "slug": "management-fee-base",
+      "checks": [
+        "Request agreement.",
+        "Request fee-base definition.",
+        "Request sample invoice.",
+        "Apply the agreed definition to a transparent revenue base."
+      ]
+    },
+    {
+      "title": "Platform charges",
+      "category": "Expense evidence",
+      "question": "Which platform fees are included in the projection?",
+      "documents": [
+        "Channel statements",
+        "fee schedule",
+        "booking mix"
+      ],
+      "flags": [
+        "A single fee percentage is applied to channels with different treatment."
+      ],
+      "action": "Separate each channel's assumed revenue and charges.",
+      "limit": "Platform terms can change; confirm the current applicable schedule.",
+      "slug": "platform-charges",
+      "checks": [
+        "Request channel statements.",
+        "Request fee schedule.",
+        "Request booking mix.",
+        "Separate each channel's assumed revenue and charges."
+      ]
+    },
+    {
+      "title": "Utility schedule",
+      "category": "Expense evidence",
+      "question": "Does the annual utility cost include all modeled months?",
+      "documents": [
+        "Monthly bills",
+        "service list",
+        "missing-period flags"
+      ],
+      "flags": [
+        "A low-season bill is multiplied by twelve without context."
+      ],
+      "action": "Show monthly observations and mark estimated months.",
+      "limit": "A prior owner's use may not match rental operations.",
+      "slug": "utility-schedule",
+      "checks": [
+        "Request monthly bills.",
+        "Request service list.",
+        "Request missing-period flags.",
+        "Show monthly observations and mark estimated months."
+      ]
+    },
+    {
+      "title": "Insurance estimate",
+      "category": "Expense evidence",
+      "question": "Is the cost based on a quote for the intended use?",
+      "documents": [
+        "Dated quote",
+        "stated use",
+        "coverage questions"
+      ],
+      "flags": [
+        "An old premium is substituted for a current rental-use quote."
+      ],
+      "action": "Record the quote scope and ask the insurer about unresolved items.",
+      "limit": "This audit does not determine coverage or adequate insurance.",
+      "slug": "insurance-estimate",
+      "checks": [
+        "Request dated quote.",
+        "Request stated use.",
+        "Request coverage questions.",
+        "Record the quote scope and ask the insurer about unresolved items."
+      ]
+    },
+    {
+      "title": "Property tax estimate",
+      "category": "Expense evidence",
+      "question": "Which basis and period support the tax cost used?",
+      "documents": [
+        "Current record",
+        "assessment context",
+        "adviser questions"
+      ],
+      "flags": [
+        "A seller's historic payment is treated as a guaranteed buyer expense."
+      ],
+      "action": "Identify the source and ask the relevant authority or adviser about assumptions.",
+      "limit": "No tax calculation or jurisdiction-specific advice is provided.",
+      "slug": "property-tax-estimate",
+      "checks": [
+        "Request current record.",
+        "Request assessment context.",
+        "Request adviser questions.",
+        "Identify the source and ask the relevant authority or adviser about assumptions."
+      ]
+    },
+    {
+      "title": "Repair allowance",
+      "category": "Expense evidence",
+      "question": "Does the repair amount cover the reported scope?",
+      "documents": [
+        "Inspection observations",
+        "itemized quote",
+        "scope exclusions"
+      ],
+      "flags": [
+        "A small allowance is shown while a larger scoped quote exists."
+      ],
+      "action": "Retain both values and request a reconciliation of scope and amount.",
+      "limit": "An allowance is not a contractor commitment.",
+      "slug": "repair-allowance",
+      "checks": [
+        "Request inspection observations.",
+        "Request itemized quote.",
+        "Request scope exclusions.",
+        "Retain both values and request a reconciliation of scope and amount."
+      ]
+    },
+    {
+      "title": "Reserve treatment",
+      "category": "Expense evidence",
+      "question": "Are reserve contributions distinguished from actual expenses?",
+      "documents": [
+        "Reserve policy",
+        "cash movements",
+        "expense schedule"
+      ],
+      "flags": [
+        "A reserve transfer is counted again as an expense when used."
+      ],
+      "action": "Keep earmarking, transfer and actual expenditure as separate events.",
+      "limit": "The appropriate accounting treatment needs professional review.",
+      "slug": "reserve-treatment",
+      "checks": [
+        "Request reserve policy.",
+        "Request cash movements.",
+        "Request expense schedule.",
+        "Keep earmarking, transfer and actual expenditure as separate events."
+      ]
+    },
+    {
+      "title": "Capital work",
+      "category": "Expense evidence",
+      "question": "Is irregular capital work visible outside recurring expenses?",
+      "documents": [
+        "Work schedule",
+        "estimates",
+        "cash plan"
+      ],
+      "flags": [
+        "A recurring-cost summary omits a known major project."
+      ],
+      "action": "Show timing and funding separately from normal operating costs.",
+      "limit": "This page does not decide capitalization or tax treatment.",
+      "slug": "capital-work",
+      "checks": [
+        "Request work schedule.",
+        "Request estimates.",
+        "Request cash plan.",
+        "Show timing and funding separately from normal operating costs."
+      ]
+    },
+    {
+      "title": "Total cash invested",
+      "category": "Acquisition evidence",
+      "question": "Does the return denominator include the stated cash components?",
+      "documents": [
+        "Down payment",
+        "closing",
+        "setup",
+        "fees",
+        "reserve schedule"
+      ],
+      "flags": [
+        "Only the down payment appears in a total-cash claim."
+      ],
+      "action": "Rebuild the denominator from documented components.",
+      "limit": "An agreed denominator still does not verify future cash flow.",
+      "slug": "total-cash-invested",
+      "checks": [
+        "Request down payment.",
+        "Request closing.",
+        "Request setup.",
+        "Request fees.",
+        "Request reserve schedule.",
+        "Rebuild the denominator from documented components."
+      ]
+    },
+    {
+      "title": "Deposit credits",
+      "category": "Acquisition evidence",
+      "question": "Is the deposit credited exactly once?",
+      "documents": [
+        "Deposit evidence",
+        "settlement estimate",
+        "cash-to-close figure"
+      ],
+      "flags": [
+        "A deposit is counted as both a new closing payment and an existing payment."
+      ],
+      "action": "Trace the deposit through the closing reconciliation.",
+      "limit": "Confirm final amounts with settlement professionals.",
+      "slug": "deposit-credits",
+      "checks": [
+        "Request deposit evidence.",
+        "Request settlement estimate.",
+        "Request cash-to-close figure.",
+        "Trace the deposit through the closing reconciliation."
+      ]
+    },
+    {
+      "title": "Purchase credits",
+      "category": "Acquisition evidence",
+      "question": "How do credits affect cash and price reporting?",
+      "documents": [
+        "Contract",
+        "credit schedule",
+        "settlement record"
+      ],
+      "flags": [
+        "A credit reduces cash but is also subtracted again from purchase price."
+      ],
+      "action": "Show price, credits and cash requirement in separate fields.",
+      "limit": "Credit use depends on the actual transaction and financing terms.",
+      "slug": "purchase-credits",
+      "checks": [
+        "Request contract.",
+        "Request credit schedule.",
+        "Request settlement record.",
+        "Show price, credits and cash requirement in separate fields."
+      ]
+    },
+    {
+      "title": "Fee timing",
+      "category": "Acquisition evidence",
+      "question": "When does each service or transaction charge become payable?",
+      "documents": [
+        "Proposal",
+        "agreement",
+        "payment milestones"
+      ],
+      "flags": [
+        "A projected fee is excluded because it was paid before closing."
+      ],
+      "action": "Include the relevant committed cash regardless of payment date.",
+      "limit": "The agreement determines actual obligations and refund terms.",
+      "slug": "fee-timing",
+      "checks": [
+        "Request proposal.",
+        "Request agreement.",
+        "Request payment milestones.",
+        "Include the relevant committed cash regardless of payment date."
+      ]
+    },
+    {
+      "title": "Loan payment",
+      "category": "Financing evidence",
+      "question": "Does the modeled payment match the loan structure?",
+      "documents": [
+        "Lender quote",
+        "principal",
+        "rate",
+        "term",
+        "payment type"
+      ],
+      "flags": [
+        "Interest-only and amortizing payment figures are compared as equivalents."
+      ],
+      "action": "Recalculate the stated structure and list omitted payment components.",
+      "limit": "The worksheet is not a loan quote or approval.",
+      "slug": "loan-payment",
+      "checks": [
+        "Request lender quote.",
+        "Request principal.",
+        "Request rate.",
+        "Request term.",
+        "Request payment type.",
+        "Recalculate the stated structure and list omitted payment components."
+      ]
+    },
+    {
+      "title": "Interest-only period",
+      "category": "Financing evidence",
+      "question": "Which periods use interest-only versus amortizing payments?",
+      "documents": [
+        "Loan terms",
+        "reset dates",
+        "payment schedule"
+      ],
+      "flags": [
+        "The initial lower payment is applied to every future year."
+      ],
+      "action": "Show separate periods and identify the terms needed for later payments.",
+      "limit": "Do not infer later payments from the initial payment alone.",
+      "slug": "interest-only-period",
+      "checks": [
+        "Request loan terms.",
+        "Request reset dates.",
+        "Request payment schedule.",
+        "Show separate periods and identify the terms needed for later payments."
+      ]
+    },
+    {
+      "title": "Balloon balance",
+      "category": "Financing evidence",
+      "question": "Is a future principal payment disclosed in the scenario?",
+      "documents": [
+        "Term sheet",
+        "maturity date",
+        "amortization schedule"
+      ],
+      "flags": [
+        "A balloon obligation is absent from a cash-flow narrative."
+      ],
+      "action": "Record the obligation and avoid treating refinancing as guaranteed.",
+      "limit": "Future refinancing availability is not established here.",
+      "slug": "balloon-balance",
+      "checks": [
+        "Request term sheet.",
+        "Request maturity date.",
+        "Request amortization schedule.",
+        "Record the obligation and avoid treating refinancing as guaranteed."
+      ]
+    },
+    {
+      "title": "Debt-service ratio",
+      "category": "Financing evidence",
+      "question": "Do NOI and debt service cover the same period?",
+      "documents": [
+        "Operating income schedule",
+        "annual debt payments",
+        "ratio definition"
+      ],
+      "flags": [
+        "A monthly debt number divides annual income."
+      ],
+      "action": "Normalize the periods before calculating the ratio.",
+      "limit": "A modeled ratio does not establish lender eligibility.",
+      "slug": "debt-service-ratio",
+      "checks": [
+        "Request operating income schedule.",
+        "Request annual debt payments.",
+        "Request ratio definition.",
+        "Normalize the periods before calculating the ratio."
+      ]
+    },
+    {
+      "title": "Return denominator",
+      "category": "Performance claims",
+      "question": "Which cash base produces the stated return?",
+      "documents": [
+        "Cash components",
+        "return calculation",
+        "excluded amounts"
+      ],
+      "flags": [
+        "The stated percentage uses a smaller denominator than the summary implies."
+      ],
+      "action": "Show the alternative calculations with explicit cash definitions.",
+      "limit": "No denominator choice turns a projection into a verified outcome.",
+      "slug": "return-denominator",
+      "checks": [
+        "Request cash components.",
+        "Request return calculation.",
+        "Request excluded amounts.",
+        "Show the alternative calculations with explicit cash definitions."
+      ]
+    },
+    {
+      "title": "Cash flow definition",
+      "category": "Performance claims",
+      "question": "Which costs sit between revenue and the claimed cash flow?",
+      "documents": [
+        "Expense schedule",
+        "debt payments",
+        "reserve treatment"
+      ],
+      "flags": [
+        "Operating income is labeled as spendable owner cash."
+      ],
+      "action": "Build the bridge from room revenue to operating income and then debt-adjusted cash.",
+      "limit": "Income tax and irregular costs may require additional treatment.",
+      "slug": "cash-flow-definition",
+      "checks": [
+        "Request expense schedule.",
+        "Request debt payments.",
+        "Request reserve treatment.",
+        "Build the bridge from room revenue to operating income and then debt-adjusted cash."
+      ]
+    },
+    {
+      "title": "Projected versus actual",
+      "category": "Performance claims",
+      "question": "Can a reader distinguish a model from an observed result?",
+      "documents": [
+        "Original model",
+        "dated operating records",
+        "reporting period"
+      ],
+      "flags": [
+        "Projected income appears beside actual purchase costs without a label."
+      ],
+      "action": "Label every field historical, quoted, assumed or unresolved.",
+      "limit": "Combining observed and assumed fields creates a scenario, not a verified return.",
+      "slug": "projected-versus-actual",
+      "checks": [
+        "Request original model.",
+        "Request dated operating records.",
+        "Request reporting period.",
+        "Label every field historical, quoted, assumed or unresolved."
+      ]
+    },
+    {
+      "title": "Reporting period",
+      "category": "Performance claims",
+      "question": "Do the figures cover matching start and end dates?",
+      "documents": [
+        "Report header",
+        "transaction dates",
+        "cutoff policy"
+      ],
+      "flags": [
+        "Income from twelve months is compared with expenses from nine."
+      ],
+      "action": "Align the periods or explain the bridge.",
+      "limit": "A matching period does not eliminate missing transactions.",
+      "slug": "reporting-period",
+      "checks": [
+        "Request report header.",
+        "Request transaction dates.",
+        "Request cutoff policy.",
+        "Align the periods or explain the bridge."
+      ]
+    },
+    {
+      "title": "Client-stage context",
+      "category": "Review context",
+      "question": "What stage of the service did the reviewer experience?",
+      "documents": [
+        "Original review date",
+        "service stage",
+        "specific observations"
+      ],
+      "flags": [
+        "A sales-call review is read as proof of long-term operating results."
+      ],
+      "action": "Keep the review's actual scope visible when drawing conclusions.",
+      "limit": "Do not infer a reviewer used services they did not describe.",
+      "slug": "client-stage-context",
+      "checks": [
+        "Request original review date.",
+        "Request service stage.",
+        "Request specific observations.",
+        "Keep the review's actual scope visible when drawing conclusions."
+      ]
+    },
+    {
+      "title": "Review chronology",
+      "category": "Review context",
+      "question": "How does the review date relate to the described service?",
+      "documents": [
+        "Original post",
+        "update history",
+        "dated response"
+      ],
+      "flags": [
+        "A later update is treated as a separate customer's experience."
+      ],
+      "action": "Read the sequence and preserve context when summarizing.",
+      "limit": "A timestamp alone does not authenticate a review.",
+      "slug": "review-chronology",
+      "checks": [
+        "Request original post.",
+        "Request update history.",
+        "Request dated response.",
+        "Read the sequence and preserve context when summarizing."
+      ]
+    },
+    {
+      "title": "Review specificity",
+      "category": "Review context",
+      "question": "Which parts of a review describe observable events?",
+      "documents": [
+        "Original text",
+        "service details",
+        "supporting context if volunteered"
+      ],
+      "flags": [
+        "Broad praise or criticism is converted into a specific financial claim."
+      ],
+      "action": "Distinguish the writer's statements from your own inference.",
+      "limit": "Do not invent supporting details or contact reviewers without authorization.",
+      "slug": "review-specificity",
+      "checks": [
+        "Request original text.",
+        "Request service details.",
+        "Request supporting context if volunteered.",
+        "Distinguish the writer's statements from your own inference."
+      ]
+    },
+    {
+      "title": "Review incentives",
+      "category": "Review context",
+      "question": "Is a material review incentive or relationship disclosed?",
+      "documents": [
+        "Platform disclosure",
+        "publisher policy",
+        "visible relationship statement"
+      ],
+      "flags": [
+        "A possible relationship is asserted as fact without evidence."
+      ],
+      "action": "Record what is disclosed and leave unsupported relationships unresolved.",
+      "limit": "This guide does not determine a legal violation.",
+      "slug": "review-incentives",
+      "checks": [
+        "Request platform disclosure.",
+        "Request publisher policy.",
+        "Request visible relationship statement.",
+        "Record what is disclosed and leave unsupported relationships unresolved."
+      ]
+    },
+    {
+      "title": "Company ownership",
+      "category": "Review context",
+      "question": "Is the publisher's relationship to BNB clear?",
+      "documents": [
+        "Publisher identity",
+        "about page",
+        "ownership disclosure"
+      ],
+      "flags": [
+        "A company resource appears to be an independent assessment."
+      ],
+      "action": "Keep the ownership statement visible alongside evaluative material.",
+      "limit": "This journal is published by My BnB Accelerator, LLC.",
+      "slug": "company-ownership",
+      "checks": [
+        "Request publisher identity.",
+        "Request about page.",
+        "Request ownership disclosure.",
+        "Keep the ownership statement visible alongside evaluative material."
+      ]
+    },
+    {
+      "title": "Complaint resolution",
+      "category": "Review context",
+      "question": "What evidence shows whether a concern was addressed?",
+      "documents": [
+        "Original concern",
+        "response",
+        "follow-up if available"
+      ],
+      "flags": [
+        "An invitation to contact support is described as a completed resolution."
+      ],
+      "action": "Separate response, proposed action and documented completion.",
+      "limit": "Do not infer that silence proves either resolution or fault.",
+      "slug": "complaint-resolution",
+      "checks": [
+        "Request original concern.",
+        "Request response.",
+        "Request follow-up if available.",
+        "Separate response, proposed action and documented completion."
+      ]
+    },
+    {
+      "title": "Scope exclusion",
+      "category": "Service evidence",
+      "question": "Does a proposal explicitly exclude the disputed task?",
+      "documents": [
+        "Written scope",
+        "exclusions",
+        "change orders"
+      ],
+      "flags": [
+        "An expected task is absent from the signed scope."
+      ],
+      "action": "Compare the actual deliverables and request clarification of conflicts.",
+      "limit": "This is evidence organization, not interpretation of contractual rights.",
+      "slug": "scope-exclusion",
+      "checks": [
+        "Request written scope.",
+        "Request exclusions.",
+        "Request change orders.",
+        "Compare the actual deliverables and request clarification of conflicts."
+      ]
+    },
+    {
+      "title": "Responsibility boundary",
+      "category": "Service evidence",
+      "question": "Which provider is responsible for the observed issue?",
+      "documents": [
+        "Agreement matrix",
+        "handoff record",
+        "third-party scope"
+      ],
+      "flags": [
+        "Acquisition support is assumed to include ongoing property management."
+      ],
+      "action": "Map the specific event to a named role and retained scope.",
+      "limit": "Responsibility disputes may need qualified professional advice.",
+      "slug": "responsibility-boundary",
+      "checks": [
+        "Request agreement matrix.",
+        "Request handoff record.",
+        "Request third-party scope.",
+        "Map the specific event to a named role and retained scope."
+      ]
+    },
+    {
+      "title": "Marketing timestamp",
+      "category": "Service evidence",
+      "question": "Was the claim current for the service being evaluated?",
+      "documents": [
+        "Dated page capture",
+        "proposal date",
+        "change history"
+      ],
+      "flags": [
+        "A current offer is used to describe an earlier engagement."
+      ],
+      "action": "Record which version applied to the time being discussed.",
+      "limit": "An archived page does not by itself establish the agreement's terms.",
+      "slug": "marketing-timestamp",
+      "checks": [
+        "Request dated page capture.",
+        "Request proposal date.",
+        "Request change history.",
+        "Record which version applied to the time being discussed."
+      ]
+    },
+    {
+      "title": "Source traceability",
+      "category": "Service evidence",
+      "question": "Can another reader locate the underlying evidence?",
+      "documents": [
+        "Stable reference",
+        "publisher",
+        "date",
+        "scope note"
+      ],
+      "flags": [
+        "A summary links to a homepage instead of the record supporting it."
+      ],
+      "action": "Attach a precise non-sensitive source reference to each material claim.",
+      "limit": "A link's existence does not certify the source.",
+      "slug": "source-traceability",
+      "checks": [
+        "Request stable reference.",
+        "Request publisher.",
+        "Request date.",
+        "Request scope note.",
+        "Attach a precise non-sensitive source reference to each material claim."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Claim register",
+      "question": "What makes a claim reviewable?",
+      "intro": "A claim register records the exact statement, publisher, date and supporting source separately from your interpretation.",
+      "action": "Break a compound sentence into individual claims so each can have its own evidence status.",
+      "limit": "A plausible statement is not verified just because it sounds specific.",
+      "slug": "claim-register",
+      "category": "Methods"
+    },
+    {
+      "title": "Evidence hierarchy",
+      "question": "How should source types be distinguished?",
+      "intro": "An original transaction record, a provider quote, a company summary and a personal review answer different questions. Identify the source type before comparing conclusions.",
+      "action": "Use the record closest to the question being tested and note what that record does not cover.",
+      "limit": "No universal source ranking replaces checking relevance and completeness.",
+      "slug": "evidence-hierarchy",
+      "category": "Methods"
+    },
+    {
+      "title": "Missing evidence",
+      "question": "What should an unavailable record mean?",
+      "intro": "Unavailable means the supporting material has not been examined. It is different from disproved and different from confirmed.",
+      "action": "Record the request and preserve the unknown status until the specific evidence arrives.",
+      "limit": "An unanswered request does not establish misconduct.",
+      "slug": "missing-evidence",
+      "category": "Methods"
+    },
+    {
+      "title": "Conflicting evidence",
+      "question": "How do you preserve a disagreement between sources?",
+      "intro": "Two records can differ because of timing, definitions, scope or error. Keep both values and their provenance rather than silently choosing one.",
+      "action": "Write the smallest question that would explain the discrepancy and identify who can answer it.",
+      "limit": "A newer source does not automatically invalidate every earlier source.",
+      "slug": "conflicting-evidence",
+      "category": "Methods"
+    },
+    {
+      "title": "Weighted averages",
+      "question": "Why can two averages disagree?",
+      "intro": "A simple average gives every observation equal weight. A weighted average gives more influence to observations with more relevant units, such as booked nights.",
+      "action": "Retain both the values and their weights and show the calculation explicitly.",
+      "limit": "A correctly weighted mean can still hide an important range.",
+      "slug": "weighted-averages",
+      "category": "Methods"
+    },
+    {
+      "title": "Denominator discipline",
+      "question": "Why does the denominator deserve its own review?",
+      "intro": "A percentage cannot be interpreted without the base it divides. Returns, occupancy and fee percentages can change when that base changes.",
+      "action": "Name the denominator in the label and record excluded units or cash components.",
+      "limit": "Two percentages with different denominators are not directly comparable.",
+      "slug": "denominator-discipline",
+      "category": "Methods"
+    },
+    {
+      "title": "Period alignment",
+      "question": "What does matching periods require?",
+      "intro": "State the start date, end date and basis of each figure. Cash received during one period can include bookings earned in another.",
+      "action": "Build a timing bridge for settlements, refunds and unpaid amounts when comparing reports.",
+      "limit": "Matching dates alone does not prove that records are complete.",
+      "slug": "period-alignment",
+      "category": "Methods"
+    },
+    {
+      "title": "Gross-to-net bridge",
+      "question": "How should a reader trace a headline total?",
+      "intro": "A bridge lists the additions and deductions between a gross measure and a net measure. It makes hidden differences visible.",
+      "action": "Keep fees, refunds, taxes and timing adjustments as separate labeled lines.",
+      "limit": "A reconciliation describes arithmetic; it is not an audit opinion.",
+      "slug": "gross-to-net-bridge",
+      "category": "Methods"
+    },
+    {
+      "title": "Selection effects",
+      "question": "Why do selected examples need context?",
+      "intro": "A set chosen for publication may differ from the full set of experiences. Readers need the selection rule before treating the examples as representative.",
+      "action": "Ask which records were eligible and which were excluded, without inventing missing population data.",
+      "limit": "A selection explanation does not establish a typical customer result.",
+      "slug": "selection-effects",
+      "category": "Methods"
+    },
+    {
+      "title": "Survivorship limits",
+      "question": "What can absent outcomes hide?",
+      "intro": "A collection may show only properties or customers still visible in the source. That can leave discontinued or incomplete experiences outside the picture.",
+      "action": "Describe the visible sample and avoid assuming it includes every relevant outcome.",
+      "limit": "Do not claim an unseen failure or success rate.",
+      "slug": "survivorship-limits",
+      "category": "Methods"
+    },
+    {
+      "title": "Causal claims",
+      "question": "Does an improvement establish what caused it?",
+      "intro": "An observed change can coincide with other changes in season, pricing, property condition or operations. Sequence alone does not isolate cause.",
+      "action": "Identify plausible competing explanations and the comparison needed to test them.",
+      "limit": "A case study is not automatically a controlled experiment.",
+      "slug": "causal-claims",
+      "category": "Methods"
+    },
+    {
+      "title": "Range reporting",
+      "question": "When is a range more informative than a point?",
+      "intro": "A point estimate can hide the spread of observations. A range can show variation, but it still needs a definition and sample context.",
+      "action": "Label whether a range is observed, min-to-max, assumed or a stress interval.",
+      "limit": "Do not describe an assumed range as a statistical confidence interval.",
+      "slug": "range-reporting",
+      "category": "Methods"
+    },
+    {
+      "title": "Outlier review",
+      "question": "How should an unusually strong example be handled?",
+      "intro": "An outlier may be a valid observation or a sign of a definition or record issue. Investigate rather than deleting it automatically.",
+      "action": "Compare the source, scope and time period with the rest of the set and record why it differs.",
+      "limit": "Unusual performance does not establish typical performance.",
+      "slug": "outlier-review",
+      "category": "Methods"
+    },
+    {
+      "title": "Revision trail",
+      "question": "How should a corrected number be presented?",
+      "intro": "A correction should retain the original value, updated value, date and reason so readers can understand the change.",
+      "action": "Link the revised claim to the underlying record and update dependent totals.",
+      "limit": "Replacing a number without its context makes later review harder.",
+      "slug": "revision-trail",
+      "category": "Methods"
+    },
+    {
+      "title": "Screenshot limitations",
+      "question": "What is missing from a dashboard screenshot?",
+      "intro": "A screenshot can omit filters, periods, definitions or adjustments. It may show an interface without exposing the underlying transaction set.",
+      "action": "Request a dated export or enough context to identify what the screen measures.",
+      "limit": "A screenshot is not automatically false, but it may support only a narrow conclusion.",
+      "slug": "screenshot-limitations",
+      "category": "Methods"
+    },
+    {
+      "title": "Attribution boundaries",
+      "question": "How do you avoid adding meaning to a quotation?",
+      "intro": "A summary should distinguish what the writer explicitly said from what the publisher infers. Preserve material limits and context.",
+      "action": "Use a source link and narrow paraphrase instead of assigning unspoken motives or results.",
+      "limit": "Do not invent or materially alter customer feedback.",
+      "slug": "attribution-boundaries",
+      "category": "Methods"
+    },
+    {
+      "title": "Negative review context",
+      "question": "How should criticism be evaluated fairly?",
+      "intro": "Apply the same questions about specificity, date, scope and evidence to positive and negative feedback.",
+      "action": "Separate the concern, the response and any documented follow-up without assuming the outcome.",
+      "limit": "A negative account alone does not establish that every customer had that experience.",
+      "slug": "negative-review-context",
+      "category": "Methods"
+    },
+    {
+      "title": "External-platform context",
+      "question": "What does an external review platform establish?",
+      "intro": "A platform provides its own publication and moderation environment. Its labels and processes should be read in the platform's own context.",
+      "action": "Link to the original account and avoid claiming independent verification beyond what the source establishes.",
+      "limit": "A third-party location does not make every claim accurate.",
+      "slug": "external-platform-context",
+      "category": "Methods"
+    },
+    {
+      "title": "Uncertainty language",
+      "question": "How should a source gap change the conclusion?",
+      "intro": "Use language that matches what was actually examined:documented, reported, assumed, unresolved or contradicted by a specific record.",
+      "action": "Explain which missing item would materially change the conclusion.",
+      "limit": "Avoid turning an unresolved question into an accusation or endorsement.",
+      "slug": "uncertainty-language",
+      "category": "Methods"
+    },
+    {
+      "title": "Reproducibility",
+      "question": "Could another reader repeat the comparison?",
+      "intro": "A reproducible comparison needs input values, units, periods, formulas and source references. It should not depend on an unexplained spreadsheet output.",
+      "action": "Save the assumptions beside the calculation and document any transformations.",
+      "limit": "Reproducible arithmetic does not independently authenticate its inputs.",
+      "slug": "reproducibility",
+      "category": "Methods"
+    }
+  ]
+}
