@@ -1,0 +1,52 @@
+{
+  "balloon-balance": {
+    "heading": "Read the payment schedule and maturity date together",
+    "intro": "A monthly payment can look manageable while leaving most of the original principal due at maturity. The amortization period determines how the regular payment is calculated; the maturity date determines when the remaining obligation must be settled. A projection that shows only the monthly payment leaves out that second question. Use the worked example to identify the missing amount, then reconcile the actual documents in the evidence checklist below.",
+    "sections": [
+      {
+        "heading": "A fictional five-year maturity with thirty-year amortization",
+        "paragraphs": [
+          "Assume a $200,000 loan with a fixed 6% annual interest rate, monthly interest equal to the annual rate divided by twelve, and equal end-of-month principal-and-interest payments calculated over 360 months. For this illustration, the unpaid principal becomes due immediately after the sixtieth scheduled payment. There are no extra payments, fees, rate changes, missed payments or payment deferrals. These are teaching assumptions, not quoted financing or an actual borrower outcome.",
+          "The monthly principal-and-interest payment is about $1,199.10. After sixty scheduled payments, approximately $186,108.71 of principal remains. That remaining balance is additional to the sixty regular payments already modeled. If the maturity settlement occurs at the same time as payment sixty, the amount needed at that time includes that regular payment as well as the remaining principal. Actual payoff instructions and the contract determine the amount and timing."
+        ],
+        "illustration": {"principal": 200000, "annualRatePercent": 6, "amortizationMonths": 360, "paidMonths": 60}
+      },
+      {
+        "heading": "Reproduce the arithmetic before reading the conclusion",
+        "paragraphs": [
+          "Let P be the original principal, r the monthly interest rate, n the amortization months and M the regular payment. For a positive rate, M = P × r ÷ [1 − (1 + r)^(−n)]. Here P is 200,000, r is 0.005 and n is 360. For each paid month, multiply the opening balance by 1.005 and subtract M. Repeating that step sixty times produces the principal balance shown above.",
+          "Only about $13,891.29 of principal has been repaid in this example. The sixty regular payments total approximately $71,946.06, but payments include interest; their total cannot be subtracted from the original principal as though every dollar reduced the balance. The displayed figures round to cents while the calculation retains full precision. A contract schedule that rounds each period can differ slightly."
+        ]
+      },
+      {
+        "heading": "Do not substitute an interest-only schedule",
+        "paragraphs": [
+          "Under a separate interest-only illustration with the same $200,000 principal and 6% rate, the monthly interest is $1,000. If all interest is paid and no principal is repaid, the principal remains $200,000 after sixty months. The smaller monthly amount has not created principal reduction. Keep that schedule separate from the thirty-year amortization example rather than mixing its payment with the other example's remaining balance."
+        ]
+      },
+      {
+        "heading": "A refinancing assumption is a separate evidence question",
+        "paragraphs": [
+          "Writing refinance in year five does not remove the maturity obligation. Record the date, the balance expected to remain, the proposed source of repayment and what is still uncertain. A possible future lender, property valuation or sale should not be labeled completed financing. The CFPB's consumer guidance explains that refinancing may be unavailable if property value or the borrower's finances deteriorate; it does not establish the outcome for a particular investment loan.",
+          "This guide does not determine whether a balloon feature is permitted for a particular loan or whether a borrower qualifies. Different loan products, purposes and contracts can carry different requirements. The example excludes taxes, insurance, operating costs, transaction expenses and any charges that could appear in a real payoff. A principal calculation is not a payoff quote or an affordability assessment."
+        ]
+      },
+      {
+        "heading": "Match each conclusion to a record",
+        "paragraphs": [
+          "Read the executed note and relevant amendments alongside the payment schedule. A summary or term sheet may describe proposed terms while the signed documents contain different conditions. Preserve the discrepancy and request an explanation instead of silently selecting the version that makes a projection work. Keep confidential loan records outside this public browser worksheet."
+        ],
+        "items": [
+          "Identify the original principal, rate convention, payment frequency and whether principal is amortizing or interest-only.",
+          "Record the amortization period separately from the maturity date and count which regular payments occur before the remaining balance is due.",
+          "Reconcile extra payments, accrued interest, fees, modifications and any other differences before comparing the schedule with a payoff statement.",
+          "Keep the repayment plan and its unresolved dependencies visible; marking a record reviewed is not loan approval or a guarantee of refinancing."
+        ]
+      }
+    ],
+    "sources": [
+      {"label": "CFPB explanation of monthly mortgage payments", "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-mortgage-lenders-calculate-monthly-payments-en-1965/", "note": "Consumer background on amortization and a shorter balloon-loan term. The numerical example above is an original hypothetical calculation."},
+      {"label": "CFPB explanation of balloon payments", "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-when-is-one-allowed-en-104/", "note": "Consumer background on the final obligation and refinancing uncertainty, not a conclusion about eligibility or legal treatment of a specific business-purpose loan."}
+    ]
+  }
+}
