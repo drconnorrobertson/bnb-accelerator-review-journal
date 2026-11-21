@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Awaiting the primary record",
+    "status": "pending",
+    "context": "A summary is available, but the first requested record has not yet been examined.",
+    "action": "Request the original record and identify which part of the summary it is meant to support.",
+    "limit": "Keep the conclusion pending; a summary alone cannot establish the source contents."
+  },
+  {
+    "title": "Referenced appendix absent",
+    "status": "missing",
+    "context": "The supplied packet refers to an appendix that is not included among its attachments.",
+    "action": "Request the named appendix and confirm that it belongs to the same document version.",
+    "limit": "Do not infer that the absent appendix either supports or contradicts the summary."
+  },
+  {
+    "title": "Property reference differs",
+    "status": "conflict",
+    "context": "The summary and a supporting record identify different property references.",
+    "action": "Ask the provider to reconcile the references before applying either record to the proposed property.",
+    "limit": "A relevant-looking record for another property does not resolve this property's question."
+  },
+  {
+    "title": "Reporting windows differ",
+    "status": "conflict",
+    "context": "Two records cover different start or end dates, so the comparison is not aligned.",
+    "action": "Request a bridge for the uncovered interval and retain both original periods.",
+    "limit": "A difference caused by timing must not be silently described as a performance difference."
+  },
+  {
+    "title": "Superseded draft retained",
+    "status": "pending",
+    "context": "A draft and a later revision are both in the packet, but neither is labeled as current.",
+    "action": "Ask the responsible party which version is operative and what changed between them.",
+    "limit": "The last file received is not automatically the operative version."
+  },
+  {
+    "title": "Verbal update only",
+    "status": "missing",
+    "context": "A conversation reportedly changed a material detail, but no written update is in the packet.",
+    "action": "Request a written confirmation from the appropriate party and retain the prior record.",
+    "limit": "Your notes about a conversation do not amend a proposal or establish an external fact."
+  },
+  {
+    "title": "Unreadable attachment",
+    "status": "missing",
+    "context": "A listed attachment cannot be read well enough to inspect its relevant fields.",
+    "action": "Request a readable copy with the source identity, scope and dates intact.",
+    "limit": "A file being present is different from its contents being reviewable."
+  },
+  {
+    "title": "Summary conflicts with source",
+    "status": "conflict",
+    "context": "A summary states that the question is resolved, while the retained source shows an open item.",
+    "action": "Record the specific disagreement and request a reconciliation tied to the source item.",
+    "limit": "Do not choose the more favorable statement merely because it is easier to use."
+  },
+  {
+    "title": "Duplicate filenames",
+    "status": "pending",
+    "context": "Several files have the same name, but their contents or dates differ.",
+    "action": "Assign stable source references and ask which copies are duplicates or revisions.",
+    "limit": "A filename is not enough to establish document identity."
+  },
+  {
+    "title": "Observation date missing",
+    "status": "missing",
+    "context": "The packet shows when a file was received but not when the underlying observation was made.",
+    "action": "Ask for the observation date and distinguish it from issue and receipt dates.",
+    "limit": "A recent upload does not establish that the underlying evidence is current."
+  },
+  {
+    "title": "Provider scope unavailable",
+    "status": "missing",
+    "context": "A provider's conclusion is quoted without the scope of work under which it was prepared.",
+    "action": "Request the scope, exclusions and relevant limitations before interpreting the conclusion.",
+    "limit": "A conclusion cannot safely be extended beyond the work actually performed."
+  },
+  {
+    "title": "Acknowledgment not recorded",
+    "status": "pending",
+    "context": "The packet includes a proposed handoff, but no record that the intended recipient acknowledged it.",
+    "action": "Ask the recipient to identify what was received and what remains outstanding.",
+    "limit": "Sending a file is not proof that it was accessible, examined or accepted."
+  },
+  {
+    "title": "Incomplete document pages",
+    "status": "missing",
+    "context": "Only part of a multi-page record is available, and the missing pages may contain context.",
+    "action": "Request the complete record, including attachments and page numbering where available.",
+    "limit": "An excerpt should not be treated as the full record."
+  },
+  {
+    "title": "Definitions conflict",
+    "status": "conflict",
+    "context": "The summary and a source use the same label for different scopes or measures.",
+    "action": "Write both definitions and ask for a comparison on a common basis.",
+    "limit": "Matching words do not guarantee matching underlying meanings."
+  },
+  {
+    "title": "Responsible source unclear",
+    "status": "pending",
+    "context": "A statement is circulated without identifying the person or organization responsible for it.",
+    "action": "Request provenance and the source's role in the matter being reviewed.",
+    "limit": "An unattributed statement cannot be assigned an invented author or authority."
+  },
+  {
+    "title": "Assumption presented as observation",
+    "status": "conflict",
+    "context": "A future estimate appears in the same presentation as observed information without a clear label.",
+    "action": "Separate assumed, quoted and observed fields and request the basis of the estimate.",
+    "limit": "A detailed estimate remains conditional rather than a recorded outcome."
+  },
+  {
+    "title": "Neighboring example substituted",
+    "status": "conflict",
+    "context": "An example from a different property is being used to answer a property-specific question.",
+    "action": "Retain it as background and request the records needed for the actual property.",
+    "limit": "An adjacent or similar property does not establish the same rights, condition or result."
+  },
+  {
+    "title": "Service stage differs",
+    "status": "pending",
+    "context": "The available account concerns an earlier stage than the stage now being evaluated.",
+    "action": "Record the actual stage covered and request evidence specific to the later stage.",
+    "limit": "An early experience cannot establish an unobserved later outcome."
+  },
+  {
+    "title": "Condition remains outstanding",
+    "status": "pending",
+    "context": "The source describes a conclusion that depends on a condition not shown as completed.",
+    "action": "Identify the condition, its owner and the evidence needed to establish completion.",
+    "limit": "Conditional language must remain attached to the conclusion."
+  },
+  {
+    "title": "Exclusion omitted from summary",
+    "status": "conflict",
+    "context": "The underlying record contains an exclusion absent from the summary.",
+    "action": "Carry the exclusion into the comparison and request clarification of its effect.",
+    "limit": "Removing a limitation can materially change the meaning of an otherwise accurate statement."
+  },
+  {
+    "title": "Source link inaccessible",
+    "status": "missing",
+    "context": "A citation points to a record that the reviewer cannot access.",
+    "action": "Request an authorized, readable copy or a working reference without copying private credentials.",
+    "limit": "The existence of a link does not establish that its contents were reviewed."
+  },
+  {
+    "title": "Evidence needs refresh",
+    "status": "pending",
+    "context": "The record predates a material change described elsewhere in the packet.",
+    "action": "Ask which findings remain applicable and which require an updated observation.",
+    "limit": "An old record should not be treated as current solely because it is the only one available."
+  },
+  {
+    "title": "Independent corroboration unavailable",
+    "status": "pending",
+    "context": "The available sources all repeat one originating statement, and no separate corroboration is supplied.",
+    "action": "Identify the original statement and describe the corroboration that has and has not been examined.",
+    "limit": "Repeated publication of one claim is not multiple independent observations."
+  },
+  {
+    "title": "Third-party boundary unclear",
+    "status": "pending",
+    "context": "A company summary describes work that may be performed under a separate third-party agreement.",
+    "action": "Map the specific task to the actual provider and request the relevant scope.",
+    "limit": "Do not infer that one firm's service description establishes another firm's obligations."
+  },
+  {
+    "title": "Task owner not assigned",
+    "status": "missing",
+    "context": "The packet identifies an open question but assigns no party to obtain the answer.",
+    "action": "Name a responsible party, a precise request and a follow-up date.",
+    "limit": "A shared task list without an owner can leave the central question unresolved."
+  },
+  {
+    "title": "Time pressure before evidence",
+    "status": "pending",
+    "context": "A target decision date is approaching while a material source remains pending.",
+    "action": "Separate the target date from the evidence gate and record what remains unexamined.",
+    "limit": "A short timeline does not convert missing information into an established fact."
+  },
+  {
+    "title": "Revision not propagated",
+    "status": "conflict",
+    "context": "A source was revised, but dependent summaries still show the old conclusion.",
+    "action": "Trace the changed item through every affected summary and retain a revision trail.",
+    "limit": "Updating one input without dependent outputs creates an inconsistent comparison."
+  },
+  {
+    "title": "Response without supporting record",
+    "status": "pending",
+    "context": "A response says the issue was addressed but does not include the record needed to demonstrate it.",
+    "action": "Request the specific completion evidence rather than treating the response as the evidence itself.",
+    "limit": "A promise or assertion of completion is distinct from documented completion."
+  },
+  {
+    "title": "Selected excerpt only",
+    "status": "pending",
+    "context": "The packet presents a selected excerpt without the surrounding context or selection rule.",
+    "action": "Request sufficient context to determine what the excerpt actually establishes.",
+    "limit": "A selected passage need not represent the full record or the full range of experiences."
+  },
+  {
+    "title": "Units not aligned",
+    "status": "conflict",
+    "context": "The relevant fields use different units or time bases, and no conversion is shown.",
+    "action": "Write the units explicitly and show the conversion before comparing the values.",
+    "limit": "A numerical comparison without aligned units can imply a difference that is not real."
+  },
+  {
+    "title": "Complete-packet claim overstated",
+    "status": "conflict",
+    "context": "The packet is labeled complete even though a required record is listed as missing.",
+    "action": "Define completeness for this question and keep the absent item visible.",
+    "limit": "A broad completeness label does not fill a specific evidence gap."
+  },
+  {
+    "title": "Repeated source counted twice",
+    "status": "pending",
+    "context": "Two apparent supporting items are copies or summaries of the same underlying record.",
+    "action": "Group them under one source reference and distinguish repetition from corroboration.",
+    "limit": "The number of attachments is not the number of independent supporting observations."
+  },
+  {
+    "title": "Provenance not retained",
+    "status": "missing",
+    "context": "The packet contains a copied statement with no stable reference back to its origin.",
+    "action": "Request the original publisher, record date and precise location of the relevant material.",
+    "limit": "Do not invent a source or treat a copied claim as authenticated evidence."
+  },
+  {
+    "title": "Figure detached from context",
+    "status": "pending",
+    "context": "A number or label is supplied without the scope, period or definition that produced it.",
+    "action": "Request the surrounding definition and supporting schedule before using the figure.",
+    "limit": "A precise-looking value may still be unusable for the intended comparison."
+  },
+  {
+    "title": "Handoff has open exceptions",
+    "status": "pending",
+    "context": "The handoff lists delivered material alongside unresolved exceptions without a follow-up owner.",
+    "action": "Retain the exception list and assign responsibility for obtaining the missing evidence.",
+    "limit": "A completed handoff does not necessarily mean every substantive question is resolved."
+  },
+  {
+    "title": "Cross-source exception unresolved",
+    "status": "conflict",
+    "context": "The packet contains two source positions that cannot both describe the same scope as presented.",
+    "action": "Preserve both positions and request the smallest factual clarification needed to reconcile them.",
+    "limit": "An unresolved discrepancy is a reason for a narrower conclusion, not an invented explanation."
+  },
+  {
+    "title": "Specialist boundary reached",
+    "status": "pending",
+    "context": "The open question requires expertise beyond the scope of the general project coordinator.",
+    "action": "Assign the question to the appropriate qualified party and request a scoped response.",
+    "limit": "This workbook does not supply legal, technical, tax or other specialist approval."
+  },
+  {
+    "title": "Unpriced dependency",
+    "status": "missing",
+    "context": "A necessary follow-up is identified, but its scope, cost or availability remains unconfirmed.",
+    "action": "Request a scoped quote or availability statement and keep the dependency separate from confirmed work.",
+    "limit": "An unpriced task is not a zero-cost task or a confirmed service commitment."
+  },
+  {
+    "title": "Readiness gate still open",
+    "status": "conflict",
+    "context": "The summary says the project is ready while a designated evidence gate is unresolved.",
+    "action": "Compare the readiness definition with the actual open gate and record the decision basis.",
+    "limit": "A broad readiness status does not override a specific unresolved prerequisite."
+  },
+  {
+    "title": "All listed records reviewed",
+    "status": "reviewed",
+    "context": "Every listed source is marked examined for this training packet, with no stated mismatch remaining.",
+    "action": "Write the narrow conclusion supported by those records and identify any matters outside their scope.",
+    "limit": "Checklist completion is not independent authentication, certification or a guarantee of outcome."
+  }
+]
