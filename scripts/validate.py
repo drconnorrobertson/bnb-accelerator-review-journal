@@ -56,7 +56,10 @@ for f in pub.rglob('*.html'):
   elif url.startswith('http'):
    parsed=urlsplit(url);assert parsed.scheme=='https',(route,'non-https link')
  pages[route]=s
-assert workspace_count==1600,workspace_count
+assert workspace_count==report['examplePages'],workspace_count
+embedded=sum(f.read_text().count('data-developed-case=') for f in pub.glob('library/**/index.html'))
+assert embedded==report['embeddedCases']==40
+assert workspace_count+embedded==report['sourceCases']==1600
 assert core_count==report['corePages'],(core_count,report['corePages'])
 assert len(pages)==report['totalPages'],(len(pages),report['totalPages'])
 sitemap={urlsplit(x.text).path for x in ET.parse(pub/'sitemap.xml').findall('.//{*}loc')}

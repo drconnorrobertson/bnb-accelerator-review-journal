@@ -18,5 +18,407 @@
     }
   ],
   "buildCommand": "node scripts/build.mjs",
-  "installCommand": ""
+  "installCommand": "",
+  "redirects": [
+    {
+      "source": "/workbooks/nightly-rate-average/example-01",
+      "destination": "/library/nightly-rate-average/#case-01",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-01/",
+      "destination": "/library/nightly-rate-average/#case-01",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-02",
+      "destination": "/library/nightly-rate-average/#case-02",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-02/",
+      "destination": "/library/nightly-rate-average/#case-02",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-03",
+      "destination": "/library/nightly-rate-average/#case-03",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-03/",
+      "destination": "/library/nightly-rate-average/#case-03",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-04",
+      "destination": "/library/nightly-rate-average/#case-04",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-04/",
+      "destination": "/library/nightly-rate-average/#case-04",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-05",
+      "destination": "/library/nightly-rate-average/#case-05",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-05/",
+      "destination": "/library/nightly-rate-average/#case-05",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-06",
+      "destination": "/library/nightly-rate-average/#case-06",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-06/",
+      "destination": "/library/nightly-rate-average/#case-06",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-07",
+      "destination": "/library/nightly-rate-average/#case-07",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-07/",
+      "destination": "/library/nightly-rate-average/#case-07",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-08",
+      "destination": "/library/nightly-rate-average/#case-08",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-08/",
+      "destination": "/library/nightly-rate-average/#case-08",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-09",
+      "destination": "/library/nightly-rate-average/#case-09",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-09/",
+      "destination": "/library/nightly-rate-average/#case-09",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-10",
+      "destination": "/library/nightly-rate-average/#case-10",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-10/",
+      "destination": "/library/nightly-rate-average/#case-10",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-11",
+      "destination": "/library/nightly-rate-average/#case-11",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-11/",
+      "destination": "/library/nightly-rate-average/#case-11",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-12",
+      "destination": "/library/nightly-rate-average/#case-12",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-12/",
+      "destination": "/library/nightly-rate-average/#case-12",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-13",
+      "destination": "/library/nightly-rate-average/#case-13",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-13/",
+      "destination": "/library/nightly-rate-average/#case-13",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-14",
+      "destination": "/library/nightly-rate-average/#case-14",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-14/",
+      "destination": "/library/nightly-rate-average/#case-14",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-15",
+      "destination": "/library/nightly-rate-average/#case-15",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-15/",
+      "destination": "/library/nightly-rate-average/#case-15",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-16",
+      "destination": "/library/nightly-rate-average/#case-16",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-16/",
+      "destination": "/library/nightly-rate-average/#case-16",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-17",
+      "destination": "/library/nightly-rate-average/#case-17",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-17/",
+      "destination": "/library/nightly-rate-average/#case-17",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-18",
+      "destination": "/library/nightly-rate-average/#case-18",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-18/",
+      "destination": "/library/nightly-rate-average/#case-18",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-19",
+      "destination": "/library/nightly-rate-average/#case-19",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-19/",
+      "destination": "/library/nightly-rate-average/#case-19",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-20",
+      "destination": "/library/nightly-rate-average/#case-20",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-20/",
+      "destination": "/library/nightly-rate-average/#case-20",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-21",
+      "destination": "/library/nightly-rate-average/#case-21",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-21/",
+      "destination": "/library/nightly-rate-average/#case-21",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-22",
+      "destination": "/library/nightly-rate-average/#case-22",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-22/",
+      "destination": "/library/nightly-rate-average/#case-22",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-23",
+      "destination": "/library/nightly-rate-average/#case-23",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-23/",
+      "destination": "/library/nightly-rate-average/#case-23",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-24",
+      "destination": "/library/nightly-rate-average/#case-24",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-24/",
+      "destination": "/library/nightly-rate-average/#case-24",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-25",
+      "destination": "/library/nightly-rate-average/#case-25",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-25/",
+      "destination": "/library/nightly-rate-average/#case-25",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-26",
+      "destination": "/library/nightly-rate-average/#case-26",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-26/",
+      "destination": "/library/nightly-rate-average/#case-26",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-27",
+      "destination": "/library/nightly-rate-average/#case-27",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-27/",
+      "destination": "/library/nightly-rate-average/#case-27",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-28",
+      "destination": "/library/nightly-rate-average/#case-28",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-28/",
+      "destination": "/library/nightly-rate-average/#case-28",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-29",
+      "destination": "/library/nightly-rate-average/#case-29",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-29/",
+      "destination": "/library/nightly-rate-average/#case-29",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-30",
+      "destination": "/library/nightly-rate-average/#case-30",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-30/",
+      "destination": "/library/nightly-rate-average/#case-30",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-31",
+      "destination": "/library/nightly-rate-average/#case-31",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-31/",
+      "destination": "/library/nightly-rate-average/#case-31",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-32",
+      "destination": "/library/nightly-rate-average/#case-32",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-32/",
+      "destination": "/library/nightly-rate-average/#case-32",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-33",
+      "destination": "/library/nightly-rate-average/#case-33",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-33/",
+      "destination": "/library/nightly-rate-average/#case-33",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-34",
+      "destination": "/library/nightly-rate-average/#case-34",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-34/",
+      "destination": "/library/nightly-rate-average/#case-34",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-35",
+      "destination": "/library/nightly-rate-average/#case-35",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-35/",
+      "destination": "/library/nightly-rate-average/#case-35",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-36",
+      "destination": "/library/nightly-rate-average/#case-36",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-36/",
+      "destination": "/library/nightly-rate-average/#case-36",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-37",
+      "destination": "/library/nightly-rate-average/#case-37",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-37/",
+      "destination": "/library/nightly-rate-average/#case-37",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-38",
+      "destination": "/library/nightly-rate-average/#case-38",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-38/",
+      "destination": "/library/nightly-rate-average/#case-38",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-39",
+      "destination": "/library/nightly-rate-average/#case-39",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-39/",
+      "destination": "/library/nightly-rate-average/#case-39",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-40",
+      "destination": "/library/nightly-rate-average/#case-40",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/nightly-rate-average/example-40/",
+      "destination": "/library/nightly-rate-average/#case-40",
+      "permanent": true
+    }
+  ]
 }
