@@ -32,6 +32,9 @@ def file_for(route):
 pages={};titles=set();digests=set();issues=[];workspace_count=core_count=0
 for f in pub.rglob('*.html'):
  if f.name=='404.html':continue
+ if f==pub/'googlea1274d45bb100c71.html':
+  assert f.read_text().strip()=='google-site-verification: googlea1274d45bb100c71.html','Invalid Google ownership verification file'
+  continue
  route='/'+str(f.parent.relative_to(pub))+'/' if f.parent!=pub else '/'
  s=Scan();text=f.read_text();s.feed(text)
  assert s.h1==1,(route,'H1',s.h1)
