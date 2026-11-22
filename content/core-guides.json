@@ -9,7 +9,12 @@
           "Assume a $200,000 loan with a fixed 6% annual interest rate, monthly interest equal to the annual rate divided by twelve, and equal end-of-month principal-and-interest payments calculated over 360 months. For this illustration, the unpaid principal becomes due immediately after the sixtieth scheduled payment. There are no extra payments, fees, rate changes, missed payments or payment deferrals. These are teaching assumptions, not quoted financing or an actual borrower outcome.",
           "The monthly principal-and-interest payment is about $1,199.10. After sixty scheduled payments, approximately $186,108.71 of principal remains. That remaining balance is additional to the sixty regular payments already modeled. If the maturity settlement occurs at the same time as payment sixty, the amount needed at that time includes that regular payment as well as the remaining principal. Actual payoff instructions and the contract determine the amount and timing."
         ],
-        "illustration": {"principal": 200000, "annualRatePercent": 6, "amortizationMonths": 360, "paidMonths": 60}
+        "illustration": {
+          "principal": 200000,
+          "annualRatePercent": 6,
+          "amortizationMonths": 360,
+          "paidMonths": 60
+        }
       },
       {
         "heading": "Reproduce the arithmetic before reading the conclusion",
@@ -45,8 +50,77 @@
       }
     ],
     "sources": [
-      {"label": "CFPB explanation of monthly mortgage payments", "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-mortgage-lenders-calculate-monthly-payments-en-1965/", "note": "Consumer background on amortization and a shorter balloon-loan term. The numerical example above is an original hypothetical calculation."},
-      {"label": "CFPB explanation of balloon payments", "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-when-is-one-allowed-en-104/", "note": "Consumer background on the final obligation and refinancing uncertainty, not a conclusion about eligibility or legal treatment of a specific business-purpose loan."}
+      {
+        "label": "CFPB explanation of monthly mortgage payments",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-do-mortgage-lenders-calculate-monthly-payments-en-1965/",
+        "note": "Consumer background on amortization and a shorter balloon-loan term. The numerical example above is an original hypothetical calculation."
+      },
+      {
+        "label": "CFPB explanation of balloon payments",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-a-balloon-payment-when-is-one-allowed-en-104/",
+        "note": "Consumer background on the final obligation and refinancing uncertainty, not a conclusion about eligibility or legal treatment of a specific business-purpose loan."
+      }
+    ]
+  },
+  "review-specificity": {
+    "heading": "Trace a review statement before adding a conclusion",
+    "intro": "Specific wording can help a reader understand an experience, but a precise sentence still needs a source that supports it. Separate what a writer described from what a publisher inferred. This company-published journal is not an independent rating service. The exercise below is fictional: it contains no customer quotation, rating, operating result or finding about BNB Accelerator.",
+    "sections": [
+      {
+        "heading": "One fictional packet, three different claims",
+        "paragraphs": [
+          "The supplied source description concerns response speed during coordination. A later summary attributes a financial return to that feedback. No quoted or linked operating records support the added financial statement. Those are the complete assumptions of this exercise; there is no hidden customer interview or financial amount to fill in. The question is whether each proposed statement stays within those records.",
+          "Statement A concerns the subject of the feedback: coordination response speed. A narrow paraphrase can retain that subject while identifying the original source and its limits. Statement B claims a financial return. The coordination description does not establish revenue, expenses, invested capital, timing or an outcome measure. Statement C says the feedback demonstrates typical customer performance. One description also supplies no defined customer population or selection method. Neither B nor C follows from A."
+        ]
+      },
+      {
+        "heading": "Build a source-to-claim map",
+        "paragraphs": [
+          "For each proposed sentence, record the source location, the exact part being relied on, the reporting context, the proposed wording and the unresolved bridge. Keep source text and editorial notes in separate fields. If the original is unavailable, mark that gap rather than treating a screenshot of someone else's summary as the underlying statement. A public link is useful only when another reader can find the relevant passage there.",
+          "In this example, the source entry is a fictional description of coordination feedback. The proposed financial sentence has no supporting operating record. The disposition is to remove that added conclusion from a paraphrase of the review and keep any separate financial question unresolved. This is a limitation on what can be published from this packet, not a finding that an actual customer gained or lost money."
+        ],
+        "items": [
+          "Source and context: identify the original location, publication date if available, any visible update and the service being discussed.",
+          "Claim: separate observed event, personal opinion, publisher interpretation and measurable outcome.",
+          "Support: identify the passage or separate record supporting each material part of the proposed wording.",
+          "Disposition: retain a supported narrow statement, revise an overbroad paraphrase or record the unresolved claim without supplying invented detail."
+        ]
+      },
+      {
+        "heading": "Keep a paraphrase narrower than its evidence",
+        "paragraphs": [
+          "A paraphrase can be shorter than the source while preserving its meaning. It should not convert a response-speed observation into an investment-performance claim. Do not put invented first-person language in quotation marks. If the original wording is not available, describe the available record and its uncertainty; do not reconstruct a customer testimonial from a summary.",
+          "The same discipline applies to criticism. A complaint about slow communication does not by itself establish a quantified operating loss or a conclusion about every customer. Retain the actual concern without strengthening or weakening it to fit a preferred narrative. If a later update changes the account, preserve the sequence and identify the update rather than silently presenting the earlier version as current."
+        ]
+      },
+      {
+        "heading": "A separate financial record answers a separate question",
+        "paragraphs": [
+          "Suppose a reviewer voluntarily provides another record later. First identify what it measures, the period, the relevant entity and what costs or adjustments it excludes. Do not assume a bank deposit is profit or a revenue total is a return on invested capital. Until the measure and its scope can be reconciled, the financial question remains open. Do not request confidential account documents through this public worksheet.",
+          "Even a reconciled record would concern its stated period and scope. It would not establish that the provider caused the result or that other customers should expect it. Those are additional questions requiring their own evidence. The present fictional packet contains no such financial record, so this guide calculates no financial outcome."
+        ]
+      },
+      {
+        "heading": "Check selection and publisher context separately",
+        "paragraphs": [
+          "A detailed review can still be an unrepresentative example. Ask how the displayed feedback was selected and whether readers can understand the publisher's relationship to the service. Missing information about incentives is unresolved context, not evidence that someone was paid. Do not label a reviewer dishonest or compensated without support.",
+          "FTC staff guidance for review platforms recommends preserving the message of reviews, treating positive and negative feedback equally, and explaining relevant review practices and material connections. That publisher guidance is background for this method, not an endorsement of this journal or a compliance determination about any particular review."
+        ]
+      },
+      {
+        "heading": "Turn the open item into a useful request",
+        "paragraphs": [
+          "For the fictional summary, the request is to identify the original source passage supporting the added financial statement and any separate record on which that statement depends. If the response only repeats the coordination feedback, the financial question remains unanswered. A reviewer can close the paraphrase edit while leaving that separate question open; one completed editing task does not resolve every claim.",
+          "Use the checklist below for non-sensitive references and follow-up notes. Its statuses describe your entries, not independent verification. The forty linked teaching cases vary record availability and review conditions around the same fictional packet; they are not forty independent customer experiences. Compare the condition you actually face, retain the original and response separately, and state precisely what remains unknown."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "FTC staff guide for platforms featuring online customer reviews",
+        "url": "https://www.ftc.gov/business-guidance/resources/featuring-online-customer-reviews-guide-platforms",
+        "note": "January 2022 guidance on collecting, moderating and publishing feedback. The source-to-claim exercise and fictional packet above are this journal's teaching method, not FTC examples or findings about a company."
+      }
     ]
   }
 }
