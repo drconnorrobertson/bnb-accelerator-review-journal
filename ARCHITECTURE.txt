@@ -1,28 +1,41 @@
-BNB portfolio expansion architecture — November 21, 2026
+BNB Review Journal architecture — November 22, 2026
 
-Goal: 5,000 useful public HTML resources, excluding error pages. Three independent GitHub repositories and Vercel production projects. Custom domain connection deferred.
+Purpose: useful evidence-question owners, not a page-count quota.
+The canonical origin remains https://bnb-accelerator-review-journal.vercel.app.
+Custom domain connection is deferred. Other BNB repositories have separate
+content and publication states; their page totals are not asserted here.
 
-Domain roles:
-bnbacceleratornow.com / bnb-accelerator-resource-index: acquisition planning and document-request workflows; 67 core pages, 1,600 browser-local planning examples.
-bnbacceleratorreviews.blog / bnb-accelerator-review-journal: evidence evaluation and reconciliation; 67 core pages, 1,600 synthetic evidence audit examples.
-bnbacceleratorreviews.software / bnb-accelerator-buyer-tools: 40 calculation models, financial definitions and 1,600 adjustable calculation examples; 66 core pages.
+Canonical population: 67 pages.
+6 original base pages + 40 evidence topic collections + 20 method references
++ 1 library hub. All 1,600 fictional case explanations remain accessible in
+forty collections. There are zero standalone workbook owners.
 
-Page budget per project:
-6 existing core pages retained.
-Resource index: 40 diligence playbooks + 20 process references + 1 library hub + 1,600 example workspaces = 1,667.
-Review journal: 40 evidence audit guides + 20 review methods + 1 library hub + 1,600 example workspaces = 1,667.
-Buyer tools: 40 calculation guides + 19 model interpretation references + 1 library hub + 1,600 worked calculations = 1,666.
-Total: 200 core pages and 4,800 developed cases = 5,000. 3 custom 404 pages excluded.
+Cohort evidence: each topic has one underlying fictional fact packet repeated
+through forty record-availability, scope or conflict conditions. Conditions are
+teaching variations, not independent properties, customers or observations.
+The thirty-eight newly collected topic slugs are explicitly enumerated in
+content/collection-cohort.json. Prior nightly-rate and review-specificity
+collections and shared runtime assets are preserved.
 
-Search policy:
-Core pages: distinct question ownership, self canonicals, indexable, sitemap coverage.
-Developed cases: 4,800 standalone resources with unique questions, direct answers, concrete fictional teaching packets or worked calculations, interpretation, next steps, limitations and editable worksheets. All are self-canonical, index,follow and included in sitemaps. No fabricated customer reviews or verified outcome claims. Automated approval records content fingerprints; changes require renewed validation. Actual Google inclusion is not guaranteed.
+Each topic has forty independent editable case checklists and one parent
+checklist: 1,640 scopes. Former case storage paths remain unchanged. Saved
+entries are read only on an explicit Load action. Inputs are not transmitted.
+Export, print, save, load and reset remain scoped to the selected checklist.
 
-Functional requirements:
-Library search and topic filtering; scenario data visible before JavaScript; local editable calculations or audit/checklist interactions; print and export; clearly disclosed publisher; appropriate links between related resources; per-page metadata and breadcrumbs; no input submission.
+Search ownership: every published content owner is self-canonical and in the
+sitemap. All 3,200 retired workbook URL forms permanently redirect directly to
+matching expanded case anchors. Routing patterns enumerate reviewed topics and
+only valid example numbers 01–40. Arbitrary topic names or case numbers are not
+retired by those patterns. Canonical aliases and static files remain separate.
 
-Build architecture:
-Each repository owns its own content catalog, renderer, scripts, styles, tests and deploy settings. Generated routes built with Node at deployment. Keep sources outside public output. Deterministic generation, stable slugs, no fabricated historic dates. Existing base content preserved. Source catalog enumerates every core topic before generation.
+Sources and reviewed fingerprints remain outside public output. Deterministic
+Node generation embeds complete case explanations and worksheet data in HTML;
+JavaScript supplies filtering and editable checklist interactions. No new
+customer quotations, ratings, legal conclusions or verified results are created.
 
-Validation gates:
-Exact page counts, unique titles/canonical paths, every route reachable, every internal link resolves, no duplicate main content, sitemap covers every content page, no noindex cases, approved article fingerprints, automated evidence/arithmetic checks and within-topic similarity checks, JSON-LD parse, no source/config files in output, independent arithmetic tests for all 40 financial models and evidence relationships, input validation, browser live flows, mobile overflow checks, production deployment commit and route verification.
+Release checks: production build and routing gate; model and balloon reference
+checks; unchanged source-article review; all 1,600 explanation and worksheet
+payload comparisons; unique IDs and labels; legacy storage paths; valid links
+and JSON; sitemap ownership; unrelated publication bytes; live routes and assets;
+responsive browser behavior; direct Google Search Console submission. These
+checks do not establish Google indexing, rankings or independent verification.

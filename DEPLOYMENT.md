@@ -1,11 +1,25 @@
-# BNB Review Journal
+# BNB Review Journal publication
 
-Intended domain: bnbacceleratorreviews.blog. Do not connect until instructed.
+Production branch: GitHub main. Canonical origin:
+https://bnb-accelerator-review-journal.vercel.app.
+Intended custom domain bnbacceleratorreviews.blog remains deferred; do not connect
+it until instructed. This release does not change domain or account access.
 
-Static HTML/CSS/JS with a dependency-free Node build. Vercel framework: Other. Build command: node scripts/build.mjs. Output: public. Production branch: main.
+The committed hosting configuration runs:
+`node scripts/build.mjs && node scripts/verify-canonical-routing.mjs`
+Output directory: `public`. There are no package installation dependencies.
 
-Currently canonicalized to https://bnb-accelerator-review-journal.vercel.app. When connecting the custom domain, replace this origin in all public HTML files, sitemap.xml and robots.txt in one commit. Add apex/www redirects in Vercel and submit the custom-domain sitemap through Search Console using team@aetaxadvisors.com. Do not claim indexing until verified.
+Publish source changes through GitHub, check the exact commit's build status,
+then verify canonical-origin content and redirects against the local build.
+Generated library/workbook directories are ignored in Git. Sources and the
+tracked sitemap are committed; generated owners are rebuilt on publication.
 
-Publisher: My BnB Accelerator, LLC. Content is company-owned; preserve disclosure. No invented reviews, ratings or outcome claims.
+The current sitemap has 67 canonical owners. All 1,600 fictional case articles
+and 1,640 editable worksheets are embedded in forty topic collections. Former
+workbook URLs redirect to their matching cases and are excluded from the sitemap.
+Follow the README validation commands before publishing changes.
 
-Expansion: generated library and workbook routes are built from content/catalog.json. Run node scripts/build.mjs before validation. All content pages, including the 1,600 developed hypothetical cases, are index eligible and included in sitemap.xml. Validate article sources with python3 scripts/review-articles.py --approve before building. The build checks approved content fingerprints. No custom-domain configuration is changed by the expansion.
+Use Google Search Console directly in the browser with team@aetaxadvisors.com.
+Submit changed sitemap content only after live verification. Record submission,
+discovery, indexing and rankings separately. A processed sitemap is not proof of
+indexing. Preserve company-publisher and fictional-example disclosures.

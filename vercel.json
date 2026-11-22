@@ -20,6 +20,16 @@
   "installCommand": "",
   "redirects": [
     {
+      "source": "/workbooks/:topic(booking-totals|payout-reconciliation|cleaning-pass-through|refund-adjustments|occupancy-denominator|revpar-definition|partial-year-annualization|seasonal-mix|comparable-selection-bias|management-fee-base|platform-charges|utility-schedule|insurance-estimate|property-tax-estimate|repair-allowance|reserve-treatment|capital-work|total-cash-invested|deposit-credits|purchase-credits|fee-timing|loan-payment|interest-only-period|balloon-balance|debt-service-ratio|return-denominator|cash-flow-definition|projected-versus-actual|reporting-period|client-stage-context|review-chronology|review-incentives|company-ownership|complaint-resolution|scope-exclusion|responsibility-boundary|marketing-timestamp|source-traceability)/example-:number(0[1-9]|[1-3][0-9]|40)",
+      "destination": "/library/:topic/#case-:number",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/:topic(booking-totals|payout-reconciliation|cleaning-pass-through|refund-adjustments|occupancy-denominator|revpar-definition|partial-year-annualization|seasonal-mix|comparable-selection-bias|management-fee-base|platform-charges|utility-schedule|insurance-estimate|property-tax-estimate|repair-allowance|reserve-treatment|capital-work|total-cash-invested|deposit-credits|purchase-credits|fee-timing|loan-payment|interest-only-period|balloon-balance|debt-service-ratio|return-denominator|cash-flow-definition|projected-versus-actual|reporting-period|client-stage-context|review-chronology|review-incentives|company-ownership|complaint-resolution|scope-exclusion|responsibility-boundary|marketing-timestamp|source-traceability)/example-:number(0[1-9]|[1-3][0-9]|40)/",
+      "destination": "/library/:topic/#case-:number",
+      "permanent": true
+    },
+    {
       "source": "/workbooks/review-specificity/example-01",
       "destination": "/library/review-specificity/#case-01",
       "permanent": true

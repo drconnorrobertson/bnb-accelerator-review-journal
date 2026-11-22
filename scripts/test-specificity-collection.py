@@ -23,7 +23,7 @@ assert len(s.ids)==len(set(s.ids)),'Duplicate collection IDs'
 assert all(label in s.ids for label in s.labels),'Unmatched label'
 assert s.cases==[slug+'/'+str(i) for i in range(1,41)]
 assert len(s.roots)==len(s.json)==41
-assert len(list((pub/'workbooks').glob('*/example-*/index.html')))==1520
+assert len(list((pub/'workbooks').glob('*/example-*/index.html')))==0
 assert len({r['data-storage-path'] for r in s.roots})==41
 assert '<form'not in text,'Collection must not submit notes through GET'
 assert 'id="workspace-data"'not in text,'Legacy global runtime must not mount'
@@ -70,4 +70,4 @@ sitemap=(pub/'sitemap.xml').read_text();assert '<lastmod>2026-11-22</lastmod>'in
 core=subprocess.check_output([os.environ.get('NODE_BINARY','node'),'--input-type=module','-e',"import {renderCoreGuide} from './scripts/core-guides.mjs';console.log(renderCoreGuide('review-specificity'));"],text=True).strip()
 assert core in text
 assert 'not forty customer experiences' in text and 'forty evidence conditions' in text
-print(json.dumps({'embeddedCases':40,'isolatedWorkspaces':41,'duplicateIDs':0,'legacySavedPaths':41,'permanentAliases':80,'priorOriginalGuide':'byte-preserved','sitemap':'1587 canonical pages','passed':True}))
+print(json.dumps({'embeddedCases':40,'isolatedWorkspaces':41,'duplicateIDs':0,'legacySavedPaths':41,'permanentAliases':80,'priorOriginalGuide':'byte-preserved','sitemap':'67 canonical pages','passed':True}))
