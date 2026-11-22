@@ -1,7 +1,6 @@
 {
   "version": 2,
   "outputDirectory": "public",
-  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*)",
@@ -17,7 +16,7 @@
       ]
     }
   ],
-  "buildCommand": "node scripts/build.mjs",
+  "buildCommand": "node scripts/build.mjs && node scripts/verify-canonical-routing.mjs",
   "installCommand": "",
   "redirects": [
     {
@@ -418,6 +417,41 @@
     {
       "source": "/workbooks/nightly-rate-average/example-40/",
       "destination": "/library/nightly-rate-average/#case-40",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-evidence",
+      "destination": "/case-study-evidence/",
+      "permanent": true
+    },
+    {
+      "source": "/projection-audit",
+      "destination": "/projection-audit/",
+      "permanent": true
+    },
+    {
+      "source": "/proposal-questions",
+      "destination": "/proposal-questions/",
+      "permanent": true
+    },
+    {
+      "source": "/reading-reviews",
+      "destination": "/reading-reviews/",
+      "permanent": true
+    },
+    {
+      "source": "/library",
+      "destination": "/library/",
+      "permanent": true
+    },
+    {
+      "source": "/:section(library|workbooks)/:path((?!.*\\.[^/]+$).*[^/])",
+      "destination": "/:section/:path/",
       "permanent": true
     }
   ]
