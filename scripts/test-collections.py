@@ -23,7 +23,7 @@ assert len(s.ids)==len(set(s.ids)),'Duplicate collection IDs'
 assert all(label in s.ids for label in s.labels),'Unmatched label'
 assert s.cases==[slug+'/'+str(i) for i in range(1,41)]
 assert len(s.roots)==len(s.json)==41
-assert len(list((pub/'workbooks').glob('*/example-*/index.html')))==1560
+assert len(list((pub/'workbooks').glob('*/example-*/index.html')))==1520
 assert len({r['data-storage-path'] for r in s.roots})==41
 assert '<form'not in text,'Collection must not submit notes through GET'
 assert 'id="workspace-data"'not in text,'Legacy global runtime must not mount'
@@ -68,4 +68,4 @@ assert not any('example-41'in r['source'] for r in redirects)
 sitemap=(pub/'sitemap.xml').read_text();assert '<lastmod>2026-11-21</lastmod>'in sitemap and f'/workbooks/{slug}/'not in sitemap
 assert '$22,000 ÷ 100 = $220' in text and (20*300+80*200)/(20+80)==220
 assert (50*300+50*200)/100==250
-print(json.dumps({'embeddedCases':40,'isolatedWorkspaces':41,'duplicateIDs':0,'legacySavedPaths':41,'permanentAliases':80,'undefinedRateBoundary':'explained','sitemap':'1627 canonical pages','passed':True}))
+print(json.dumps({'embeddedCases':40,'isolatedWorkspaces':41,'duplicateIDs':0,'legacySavedPaths':41,'permanentAliases':80,'undefinedRateBoundary':'explained','sitemap':'1587 canonical pages','passed':True}))

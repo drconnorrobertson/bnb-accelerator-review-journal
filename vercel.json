@@ -20,6 +20,406 @@
   "installCommand": "",
   "redirects": [
     {
+      "source": "/workbooks/review-specificity/example-01",
+      "destination": "/library/review-specificity/#case-01",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-01/",
+      "destination": "/library/review-specificity/#case-01",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-02",
+      "destination": "/library/review-specificity/#case-02",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-02/",
+      "destination": "/library/review-specificity/#case-02",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-03",
+      "destination": "/library/review-specificity/#case-03",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-03/",
+      "destination": "/library/review-specificity/#case-03",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-04",
+      "destination": "/library/review-specificity/#case-04",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-04/",
+      "destination": "/library/review-specificity/#case-04",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-05",
+      "destination": "/library/review-specificity/#case-05",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-05/",
+      "destination": "/library/review-specificity/#case-05",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-06",
+      "destination": "/library/review-specificity/#case-06",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-06/",
+      "destination": "/library/review-specificity/#case-06",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-07",
+      "destination": "/library/review-specificity/#case-07",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-07/",
+      "destination": "/library/review-specificity/#case-07",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-08",
+      "destination": "/library/review-specificity/#case-08",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-08/",
+      "destination": "/library/review-specificity/#case-08",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-09",
+      "destination": "/library/review-specificity/#case-09",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-09/",
+      "destination": "/library/review-specificity/#case-09",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-10",
+      "destination": "/library/review-specificity/#case-10",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-10/",
+      "destination": "/library/review-specificity/#case-10",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-11",
+      "destination": "/library/review-specificity/#case-11",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-11/",
+      "destination": "/library/review-specificity/#case-11",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-12",
+      "destination": "/library/review-specificity/#case-12",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-12/",
+      "destination": "/library/review-specificity/#case-12",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-13",
+      "destination": "/library/review-specificity/#case-13",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-13/",
+      "destination": "/library/review-specificity/#case-13",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-14",
+      "destination": "/library/review-specificity/#case-14",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-14/",
+      "destination": "/library/review-specificity/#case-14",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-15",
+      "destination": "/library/review-specificity/#case-15",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-15/",
+      "destination": "/library/review-specificity/#case-15",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-16",
+      "destination": "/library/review-specificity/#case-16",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-16/",
+      "destination": "/library/review-specificity/#case-16",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-17",
+      "destination": "/library/review-specificity/#case-17",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-17/",
+      "destination": "/library/review-specificity/#case-17",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-18",
+      "destination": "/library/review-specificity/#case-18",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-18/",
+      "destination": "/library/review-specificity/#case-18",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-19",
+      "destination": "/library/review-specificity/#case-19",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-19/",
+      "destination": "/library/review-specificity/#case-19",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-20",
+      "destination": "/library/review-specificity/#case-20",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-20/",
+      "destination": "/library/review-specificity/#case-20",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-21",
+      "destination": "/library/review-specificity/#case-21",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-21/",
+      "destination": "/library/review-specificity/#case-21",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-22",
+      "destination": "/library/review-specificity/#case-22",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-22/",
+      "destination": "/library/review-specificity/#case-22",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-23",
+      "destination": "/library/review-specificity/#case-23",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-23/",
+      "destination": "/library/review-specificity/#case-23",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-24",
+      "destination": "/library/review-specificity/#case-24",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-24/",
+      "destination": "/library/review-specificity/#case-24",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-25",
+      "destination": "/library/review-specificity/#case-25",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-25/",
+      "destination": "/library/review-specificity/#case-25",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-26",
+      "destination": "/library/review-specificity/#case-26",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-26/",
+      "destination": "/library/review-specificity/#case-26",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-27",
+      "destination": "/library/review-specificity/#case-27",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-27/",
+      "destination": "/library/review-specificity/#case-27",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-28",
+      "destination": "/library/review-specificity/#case-28",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-28/",
+      "destination": "/library/review-specificity/#case-28",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-29",
+      "destination": "/library/review-specificity/#case-29",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-29/",
+      "destination": "/library/review-specificity/#case-29",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-30",
+      "destination": "/library/review-specificity/#case-30",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-30/",
+      "destination": "/library/review-specificity/#case-30",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-31",
+      "destination": "/library/review-specificity/#case-31",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-31/",
+      "destination": "/library/review-specificity/#case-31",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-32",
+      "destination": "/library/review-specificity/#case-32",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-32/",
+      "destination": "/library/review-specificity/#case-32",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-33",
+      "destination": "/library/review-specificity/#case-33",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-33/",
+      "destination": "/library/review-specificity/#case-33",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-34",
+      "destination": "/library/review-specificity/#case-34",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-34/",
+      "destination": "/library/review-specificity/#case-34",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-35",
+      "destination": "/library/review-specificity/#case-35",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-35/",
+      "destination": "/library/review-specificity/#case-35",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-36",
+      "destination": "/library/review-specificity/#case-36",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-36/",
+      "destination": "/library/review-specificity/#case-36",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-37",
+      "destination": "/library/review-specificity/#case-37",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-37/",
+      "destination": "/library/review-specificity/#case-37",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-38",
+      "destination": "/library/review-specificity/#case-38",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-38/",
+      "destination": "/library/review-specificity/#case-38",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-39",
+      "destination": "/library/review-specificity/#case-39",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-39/",
+      "destination": "/library/review-specificity/#case-39",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-40",
+      "destination": "/library/review-specificity/#case-40",
+      "permanent": true
+    },
+    {
+      "source": "/workbooks/review-specificity/example-40/",
+      "destination": "/library/review-specificity/#case-40",
+      "permanent": true
+    },
+    {
       "source": "/workbooks/nightly-rate-average/example-01",
       "destination": "/library/nightly-rate-average/#case-01",
       "permanent": true
