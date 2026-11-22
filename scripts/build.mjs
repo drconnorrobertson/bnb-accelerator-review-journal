@@ -43,7 +43,7 @@ for(const [i,t] of topics.entries()){
  }
  if(t.slug===specificitySlug){
  const collection=renderSpecificityCollection({topic:t,articles:editorials[t.slug],auditForm,own:workspace,format,kind:config.kind});
- body=`<div class="reading"><article>${collection}</article><aside class="sidepanel"><h2>${esc(t.category)}</h2>${para(t.action)}${related(t)}</aside></div>`;
+ body=`<div class="reading"><article style="min-width:0">${collection}</article><aside class="sidepanel"><h2>${esc(t.category)}</h2>${para(t.action)}${related(t)}</aside></div>`;
  const extraHead=['case-collection.css','case-collection.mjs'].map(file=>{const hash=crypto.createHash('sha256').update(fs.readFileSync(path.join(pub,file))).digest('hex').slice(0,10);return file.endsWith('.css')?`<link rel="stylesheet" href="/${file}?v=${hash}">`:`<script type="module" src="/${file}?v=${hash}"></script>`;}).join('');
  write(topicPath(t),specificityTitle,specificityDescription,body,{category:t.category,extraHead,updated:specificityDate});
  continue;
