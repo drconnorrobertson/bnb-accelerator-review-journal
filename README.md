@@ -36,6 +36,27 @@ After building, run `python3 scripts/test-collections.py` in addition to the
 existing model, source-article and site validators. It checks all forty original
 explanations against the embedded text, forty-one unique worksheet scopes and
 legacy save paths, label/ID integrity, and all eighty explicit redirect rules.
-A generated sitemap has 1,627 canonical pages; 1,600 source cases still exist
-(1,560 standalone and forty in the collection). These automated checks do not
+A generated sitemap has 1,587 canonical pages; 1,600 source cases still exist
+(1,520 standalone and eighty in two collections). These automated checks do not
 establish that Google has indexed a page or judged its search value.
+
+
+## Review-specificity case collection
+
+The existing original source-to-claim guide now collects all forty fictional
+review-specificity evidence conditions on its canonical topic page. Its original
+core guide and every full case explanation are preserved. These are variations
+around one fictional feedback packet, not forty customer experiences. No new
+customer quotations, financial outcomes or ratings are supplied.
+
+Each example has an isolated editable checklist and retains its former local
+save path. The parent retains its own original path. Filtering and old case
+URLs open the matching example; all eighty former URL forms permanently redirect
+directly to the corresponding anchor. The nightly-rate collection and its
+runtime assets remain unchanged.
+
+Run `python3 scripts/test-specificity-collection.py` as well as the existing
+nightly-rate collection tests. Together they check eighty preserved articles and
+eighty-two worksheet scopes. The source case count stays 1,600; 1,520 remain
+standalone and eighty are collected. The 1,587 sitemap entries establish the
+published canonical population, not Google's indexed population.
