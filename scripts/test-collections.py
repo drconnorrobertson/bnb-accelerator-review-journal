@@ -58,7 +58,7 @@ for before,after in zip(originals,embedded):
  after=after.split('<section><h2>Track the evidence and next request</h2>')[0]
  before=before.split('<section><h2>Track the evidence and next request</h2>')[0]
  assert visible(before)==visible(after),'Source case prose changed during collection rendering'
-redirects=json.loads((root/'vercel.json').read_text())['redirects'];assert len(redirects)==80
+redirects=json.loads((root/'vercel.json').read_text())['redirects'];assert len([r for r in redirects if r['source'].startswith(f'/workbooks/{slug}/example-')])==80
 for n in range(1,41):
  for slash in ['', '/']:
   source=f'/workbooks/{slug}/example-{n:02d}'+slash
