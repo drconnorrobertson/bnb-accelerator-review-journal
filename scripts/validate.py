@@ -58,7 +58,7 @@ for f in pub.rglob('*.html'):
  pages[route]=s
 assert workspace_count==report['examplePages'],workspace_count
 embedded=sum(f.read_text().count('data-developed-case=') for f in pub.glob('library/**/index.html'))
-assert embedded==report['embeddedCases']==80
+assert embedded==report['embeddedCases']==1600
 assert workspace_count+embedded==report['sourceCases']==1600
 assert core_count==report['corePages'],(core_count,report['corePages'])
 assert len(pages)==report['totalPages'],(len(pages),report['totalPages'])
